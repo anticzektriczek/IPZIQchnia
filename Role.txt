@@ -1,0 +1,4 @@
+Antoni Traczyk - lider
+Błażej Skiba - backend
+Piotr Guzowski - baza danych
+Jakub Uziębło - frontend
