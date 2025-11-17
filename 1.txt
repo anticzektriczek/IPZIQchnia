@@ -7,7 +7,7 @@ dostępnych składników, sortowanie listy np. wg wartości kalorycznej lub filt
 mięsnych, jarskich czy bezglutenowych.
 
 
-technologia: c# + .NET maui, baza danych w SQL
+technologia: c# + .NET maui, baza danych w SQLlite (SQLiteStudio)
 harmonogram: spotkania co tydzień w poniedziałki, przedstawianie kolejnych rozwiązań i dalsza praca nad projektem
 
 Antoni Traczyk - lider
