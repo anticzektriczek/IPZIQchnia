@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SrNFpeZIyVU=",
+  "dgSpecHash": "RpcRO7o+aHg=",
   "success": true,
-  "projectFilePath": "C:\\Studia\\IQuchnia\\iquchnia\\iquchnia\\iquchnia.csproj",
+  "projectFilePath": "C:\\Studia\\gry\\Gamejam\\IPZIQchnia\\iquchnia\\iquchnia\\iquchnia.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\blaze\\.nuget\\packages\\communitytoolkit.mvvm\\8.4.0\\communitytoolkit.mvvm.8.4.0.nupkg.sha512",
     "C:\\Users\\blaze\\.nuget\\packages\\googlegson\\2.13.0.1\\googlegson.2.13.0.1.nupkg.sha512",
@@ -122,8 +122,8 @@
     "C:\\Users\\blaze\\.nuget\\packages\\microsoft.android.runtime.35.android-arm64\\35.0.105\\microsoft.android.runtime.35.android-arm64.35.0.105.nupkg.sha512",
     "C:\\Users\\blaze\\.nuget\\packages\\microsoft.android.runtime.35.android-x64\\35.0.105\\microsoft.android.runtime.35.android-x64.35.0.105.nupkg.sha512",
     "C:\\Users\\blaze\\.nuget\\packages\\microsoft.android.ref.35\\35.0.105\\microsoft.android.ref.35.35.0.105.nupkg.sha512",
+    "C:\\Users\\blaze\\.nuget\\packages\\microsoft.ios.runtime.iossimulator-x64.net9.0_26.0\\26.0.9766\\microsoft.ios.runtime.iossimulator-x64.net9.0_26.0.26.0.9766.nupkg.sha512",
     "C:\\Users\\blaze\\.nuget\\packages\\microsoft.ios.ref.net9.0_26.0\\26.0.9766\\microsoft.ios.ref.net9.0_26.0.26.0.9766.nupkg.sha512",
-    "C:\\Users\\blaze\\.nuget\\packages\\microsoft.ios.runtime.ios-arm64.net9.0_26.0\\26.0.9766\\microsoft.ios.runtime.ios-arm64.net9.0_26.0.26.0.9766.nupkg.sha512",
     "C:\\Users\\blaze\\.nuget\\packages\\microsoft.maccatalyst.runtime.maccatalyst-x64.net9.0_26.0\\26.0.9766\\microsoft.maccatalyst.runtime.maccatalyst-x64.net9.0_26.0.26.0.9766.nupkg.sha512",
     "C:\\Users\\blaze\\.nuget\\packages\\microsoft.maccatalyst.ref.net9.0_26.0\\26.0.9766\\microsoft.maccatalyst.ref.net9.0_26.0.26.0.9766.nupkg.sha512",
     "C:\\Users\\blaze\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.57\\microsoft.windows.sdk.net.ref.10.0.19041.57.nupkg.sha512"

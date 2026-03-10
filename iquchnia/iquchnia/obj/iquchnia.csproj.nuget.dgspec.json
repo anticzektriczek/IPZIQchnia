@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Studia\\IQuchnia\\iquchnia\\iquchnia\\iquchnia.csproj": {}
+    "C:\\Studia\\gry\\Gamejam\\IPZIQchnia\\iquchnia\\iquchnia\\iquchnia.csproj": {}
   },
   "projects": {
-    "C:\\Studia\\IQuchnia\\iquchnia\\iquchnia\\iquchnia.csproj": {
+    "C:\\Studia\\gry\\Gamejam\\IPZIQchnia\\iquchnia\\iquchnia\\iquchnia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Studia\\IQuchnia\\iquchnia\\iquchnia\\iquchnia.csproj",
+        "projectUniqueName": "C:\\Studia\\gry\\Gamejam\\IPZIQchnia\\iquchnia\\iquchnia\\iquchnia.csproj",
         "projectName": "iquchnia",
-        "projectPath": "C:\\Studia\\IQuchnia\\iquchnia\\iquchnia\\iquchnia.csproj",
+        "projectPath": "C:\\Studia\\gry\\Gamejam\\IPZIQchnia\\iquchnia\\iquchnia\\iquchnia.csproj",
         "packagesPath": "C:\\Users\\blaze\\.nuget\\packages\\",
-        "outputPath": "C:\\Studia\\IQuchnia\\iquchnia\\iquchnia\\obj\\",
+        "outputPath": "C:\\Studia\\gry\\Gamejam\\IPZIQchnia\\iquchnia\\iquchnia\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
@@ -444,7 +444,7 @@
               "version": "[26.0.9766, 26.0.9766]"
             },
             {
-              "name": "Microsoft.iOS.Runtime.ios-arm64.net9.0_26.0",
+              "name": "Microsoft.iOS.Runtime.iossimulator-x64.net9.0_26.0",
               "version": "[26.0.9766, 26.0.9766]"
             }
           ],
@@ -1415,7 +1415,7 @@
         "android-x64": {
           "#import": []
         },
-        "ios-arm64": {
+        "iossimulator-x64": {
           "#import": []
         },
         "maccatalyst-x64": {

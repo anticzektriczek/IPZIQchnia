@@ -21,12 +21,12 @@ public static class MauiProgram
         // Rejestracja usług
         builder.Services.AddSingleton<IRecipeService, RecipeService>();
 
-        // Rejestracja ViewModeli
         builder.Services.AddTransient<SearchViewModel>();
-        builder.Services.AddTransient<RecipeDetailsViewModel>();
+        builder.Services.AddTransient<SearchResultsViewModel>();
 
-        // Rejestracja stron
         builder.Services.AddTransient<SearchPage>();
+        builder.Services.AddTransient<SearchResultsPage>();
+        builder.Services.AddTransient<RecipeDetailsViewModel>();
         builder.Services.AddTransient<RecipeDetailsPage>();
 
         return builder.Build();

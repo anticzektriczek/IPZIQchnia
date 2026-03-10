@@ -6931,7 +6931,7 @@
         }
       }
     },
-    "net9.0-android35.0/ios-arm64": {
+    "net9.0-android35.0/iossimulator-x64": {
       "CommunityToolkit.Mvvm/8.4.0": {
         "type": "package",
         "compile": {
@@ -15115,7 +15115,7 @@
         }
       }
     },
-    "net9.0-ios26.0/ios-arm64": {
+    "net9.0-ios26.0/iossimulator-x64": {
       "CommunityToolkit.Mvvm/8.4.0": {
         "type": "package",
         "compile": {
@@ -17623,7 +17623,7 @@
         }
       }
     },
-    "net9.0-maccatalyst26.0/ios-arm64": {
+    "net9.0-maccatalyst26.0/iossimulator-x64": {
       "CommunityToolkit.Mvvm/8.4.0": {
         "type": "package",
         "compile": {
@@ -20757,7 +20757,7 @@
         }
       }
     },
-    "net9.0-windows10.0.19041/ios-arm64": {
+    "net9.0-windows10.0.19041/iossimulator-x64": {
       "CommunityToolkit.Mvvm/8.4.0": {
         "type": "package",
         "compile": {
@@ -26570,11 +26570,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Studia\\IQuchnia\\iquchnia\\iquchnia\\iquchnia.csproj",
+      "projectUniqueName": "C:\\Studia\\gry\\Gamejam\\IPZIQchnia\\iquchnia\\iquchnia\\iquchnia.csproj",
       "projectName": "iquchnia",
-      "projectPath": "C:\\Studia\\IQuchnia\\iquchnia\\iquchnia\\iquchnia.csproj",
+      "projectPath": "C:\\Studia\\gry\\Gamejam\\IPZIQchnia\\iquchnia\\iquchnia\\iquchnia.csproj",
       "packagesPath": "C:\\Users\\blaze\\.nuget\\packages\\",
-      "outputPath": "C:\\Studia\\IQuchnia\\iquchnia\\iquchnia\\obj\\",
+      "outputPath": "C:\\Studia\\gry\\Gamejam\\IPZIQchnia\\iquchnia\\iquchnia\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
@@ -27007,7 +27007,7 @@
             "version": "[26.0.9766, 26.0.9766]"
           },
           {
-            "name": "Microsoft.iOS.Runtime.ios-arm64.net9.0_26.0",
+            "name": "Microsoft.iOS.Runtime.iossimulator-x64.net9.0_26.0",
             "version": "[26.0.9766, 26.0.9766]"
           }
         ],
@@ -27978,7 +27978,7 @@
       "android-x64": {
         "#import": []
       },
-      "ios-arm64": {
+      "iossimulator-x64": {
         "#import": []
       },
       "maccatalyst-x64": {

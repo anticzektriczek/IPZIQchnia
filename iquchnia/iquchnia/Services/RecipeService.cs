@@ -12,15 +12,76 @@ public class RecipeService : IRecipeService
         {
             Id = 1,
             Name = "Omlet",
-            Ingredients = new() { "jajko", "mleko", "sól" },
-            Description = "Rozbij jajka, dodaj mleko i sól, usmaż na patelni."
+            Ingredients = new() { "jajko", "mleko", "sól", "ser", "a" },    
+            Description = "Rozbij jajka, dodaj mleko i sól, usmaż na patelni.",
+            CzyWeganskie = true,
+            CzyWegetarianskie = false,
+            CzyOrzech = false,
+            CzyNabial = true,
+            CzasPrzygotowaniaMin = 20,
+            PoziomTrudnosci = 2
         },
         new Recipe
         {
             Id = 2,
             Name = "Makaron z serem",
-            Ingredients = new() { "makaron", "ser", "masło" },
-            Description = "Ugotuj makaron, dodaj masło i starty ser."
+            Ingredients = new() { "makaron", "ser", "masło", "a" },
+            Description = "Ugotuj makaron, dodaj masło i starty ser.",
+            CzyWeganskie = false,
+            CzyWegetarianskie = false,
+            CzyOrzech = false,
+            CzyNabial = false,
+            CzasPrzygotowaniaMin = 30,
+            PoziomTrudnosci = 1
+        },
+        new Recipe
+        {
+            Id = 3,
+            Name = "Parówki",
+            Ingredients = new() { "parówki", "ser", "masło", "a" },
+            Description = "Ugotuj makaron, dodaj masło i starty ser.",
+            CzyWeganskie = false,
+            CzyWegetarianskie = false,
+            CzyOrzech = false,
+            CzyNabial = false,
+            CzasPrzygotowaniaMin = 10,
+            PoziomTrudnosci = 1
+        },
+        new Recipe
+        {
+            Name = "Jajecznica",
+            Ingredients = new() { "jajko", "masło", "sól", "a" },
+            Description = "Klasyczna jajecznica.",
+            CzyWeganskie = false,
+            CzyWegetarianskie = true,
+            CzyOrzech = false,
+            CzyNabial = true,
+            CzasPrzygotowaniaMin = 10,
+            PoziomTrudnosci = 1
+        },
+        new Recipe
+        {
+            Name = "Sałatka owocowa",
+            Ingredients = new() { "jabłko", "banan", "pomarańcza", "a" },
+            Description = "Lekka sałatka.",
+            CzyWeganskie = true,
+            CzyWegetarianskie = true,
+            CzyOrzech = false,
+            CzyNabial = false,
+            CzasPrzygotowaniaMin = 40,
+            PoziomTrudnosci = 3
+        },
+        new Recipe
+        {
+            Name = "Ciasto orzechowe",
+            Ingredients = new() { "orzechy", "mąka", "cukier", "a" },
+            Description = "Ciasto z orzechami.",
+            CzyWeganskie = false,
+            CzyWegetarianskie = true,
+            CzyOrzech = true,
+            CzyNabial = true,
+            CzasPrzygotowaniaMin = 60,
+            PoziomTrudnosci = 5
         }
     };
 

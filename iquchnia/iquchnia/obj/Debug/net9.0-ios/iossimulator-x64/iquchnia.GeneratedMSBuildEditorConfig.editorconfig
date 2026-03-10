@@ -19,44 +19,50 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = iquchnia
-build_property.ProjectDir = C:\Studia\IQuchnia\iquchnia\iquchnia\
+build_property.ProjectDir = C:\Studia\gry\Gamejam\IPZIQchnia\iquchnia\iquchnia\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Studia/IQuchnia/iquchnia/iquchnia/App.xaml]
+[C:/Studia/gry/Gamejam/IPZIQchnia/iquchnia/iquchnia/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = iquchnia.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/Studia/IQuchnia/iquchnia/iquchnia/AppShell.xaml]
+[C:/Studia/gry/Gamejam/IPZIQchnia/iquchnia/iquchnia/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = iquchnia.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/Studia/IQuchnia/iquchnia/iquchnia/Resources/Styles/Colors.xaml]
+[C:/Studia/gry/Gamejam/IPZIQchnia/iquchnia/iquchnia/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = iquchnia.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[C:/Studia/IQuchnia/iquchnia/iquchnia/Resources/Styles/Styles.xaml]
+[C:/Studia/gry/Gamejam/IPZIQchnia/iquchnia/iquchnia/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = iquchnia.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
-[C:/Studia/IQuchnia/iquchnia/iquchnia/Views/RecipeDetailsPage.xaml]
+[C:/Studia/gry/Gamejam/IPZIQchnia/iquchnia/iquchnia/Views/RecipeDetailsPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = iquchnia.Views.RecipeDetailsPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\RecipeDetailsPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\RecipeDetailsPage.xaml
 
-[C:/Studia/IQuchnia/iquchnia/iquchnia/Views/SearchPage.xaml]
+[C:/Studia/gry/Gamejam/IPZIQchnia/iquchnia/iquchnia/Views/SearchPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = iquchnia.Views.SearchPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\SearchPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\SearchPage.xaml
+
+[C:/Studia/gry/Gamejam/IPZIQchnia/iquchnia/iquchnia/Views/SearchResultsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = iquchnia.Views.SearchResultsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\SearchResultsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\SearchResultsPage.xaml

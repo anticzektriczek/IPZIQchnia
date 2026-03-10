@@ -3,38 +3,22 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:vm="clr-namespace:iquchnia.ViewModels"
-    xmlns:models="clr-namespace:iquchnia.Models"
     x:Class="iquchnia.Views.SearchPage"
     x:DataType="vm:SearchViewModel"
     Title="Wyszukiwarka Przepisów">
 
     <VerticalStackLayout Padding="16" Spacing="10">
 
+        <!-- Pole tekstowe na składniki -->
         <Entry
-            Placeholder="Wpisz składniki (oddzielone przecinkami)"
+            Placeholder="Wpisz składniki (np. pomidor, makaron)"
             Text="{Binding IngredientsText}" />
 
+        <!-- Przycisk Szukaj -->
         <Button
             Text="Szukaj"
             Command="{Binding SearchCommand}" />
 
-        
-        <CollectionView x:Name="RecipesCollection"
-                        ItemsSource="{Binding Recipes}"
-                        SelectionMode="Single">
-            <CollectionView.ItemTemplate>
-                <DataTemplate x:DataType="models:Recipe">
-                    <Frame Padding="10" Margin="5" BackgroundColor="LightGray"
-                           CornerRadius="8"
-                           HasShadow="True"
-                           InputTransparent="True">
-                        
-                        <Label Text="{Binding Name}" FontSize="18" TextColor="Black"/>
-                    </Frame>
-                </DataTemplate> 
-
-            </CollectionView.ItemTemplate>
-        </CollectionView>
-
     </VerticalStackLayout>
+
 </ContentPage>
