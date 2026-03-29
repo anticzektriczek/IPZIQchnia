@@ -6,10 +6,4 @@
 
     <ShellContent Route="SearchPage"
                   ContentTemplate="{DataTemplate views:SearchPage}" />
-
-    <ShellContent Route="SearchResultsPage"
-                  ContentTemplate="{DataTemplate views:SearchResultsPage}" />
-
-    <ShellContent Route="RecipeDetailsPage"
-                  ContentTemplate="{DataTemplate views:RecipeDetailsPage}" />
 </Shell>

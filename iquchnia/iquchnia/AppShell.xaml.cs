@@ -8,7 +8,7 @@ namespace iquchnia
         public AppShell()
         {
             InitializeComponent();
-            Routing.RegisterRoute(nameof(SearchPage), typeof(SearchPage));
+        
             Routing.RegisterRoute(nameof(SearchResultsPage), typeof(SearchResultsPage));
             Routing.RegisterRoute(nameof(RecipeDetailsPage), typeof(RecipeDetailsPage));
         }

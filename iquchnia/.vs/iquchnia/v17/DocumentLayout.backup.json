@@ -3,36 +3,12 @@
   "WorkspaceRootPath": "C:\\Studia\\gry\\Gamejam\\IPZIQchnia\\iquchnia\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4616D9CC-975B-4B18-B2D6-51C4671EAE54}|iquchnia\\iquchnia.csproj|c:\\studia\\gry\\gamejam\\ipziqchnia\\iquchnia\\iquchnia\\views\\searchresultspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{4616D9CC-975B-4B18-B2D6-51C4671EAE54}|iquchnia\\iquchnia.csproj|solutionrelative:iquchnia\\views\\searchresultspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{4616D9CC-975B-4B18-B2D6-51C4671EAE54}|iquchnia\\iquchnia.csproj|c:\\studia\\gry\\gamejam\\ipziqchnia\\iquchnia\\iquchnia\\views\\searchpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4616D9CC-975B-4B18-B2D6-51C4671EAE54}|iquchnia\\iquchnia.csproj|solutionrelative:iquchnia\\views\\searchpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4616D9CC-975B-4B18-B2D6-51C4671EAE54}|iquchnia\\iquchnia.csproj|c:\\studia\\gry\\gamejam\\ipziqchnia\\iquchnia\\iquchnia\\views\\searchresultspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4616D9CC-975B-4B18-B2D6-51C4671EAE54}|iquchnia\\iquchnia.csproj|solutionrelative:iquchnia\\views\\searchresultspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4616D9CC-975B-4B18-B2D6-51C4671EAE54}|iquchnia\\iquchnia.csproj|c:\\studia\\gry\\gamejam\\ipziqchnia\\iquchnia\\iquchnia\\services\\recipeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4616D9CC-975B-4B18-B2D6-51C4671EAE54}|iquchnia\\iquchnia.csproj|solutionrelative:iquchnia\\services\\recipeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4616D9CC-975B-4B18-B2D6-51C4671EAE54}|iquchnia\\iquchnia.csproj|c:\\studia\\gry\\gamejam\\ipziqchnia\\iquchnia\\iquchnia\\services\\irecipeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4616D9CC-975B-4B18-B2D6-51C4671EAE54}|iquchnia\\iquchnia.csproj|solutionrelative:iquchnia\\services\\irecipeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4616D9CC-975B-4B18-B2D6-51C4671EAE54}|iquchnia\\iquchnia.csproj|c:\\studia\\gry\\gamejam\\ipziqchnia\\iquchnia\\iquchnia\\models\\recipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4616D9CC-975B-4B18-B2D6-51C4671EAE54}|iquchnia\\iquchnia.csproj|solutionrelative:iquchnia\\models\\recipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4616D9CC-975B-4B18-B2D6-51C4671EAE54}|iquchnia\\iquchnia.csproj|c:\\studia\\gry\\gamejam\\ipziqchnia\\iquchnia\\iquchnia\\views\\searchpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4616D9CC-975B-4B18-B2D6-51C4671EAE54}|iquchnia\\iquchnia.csproj|solutionrelative:iquchnia\\views\\searchpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4616D9CC-975B-4B18-B2D6-51C4671EAE54}|iquchnia\\iquchnia.csproj|c:\\studia\\gry\\gamejam\\ipziqchnia\\iquchnia\\iquchnia\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4616D9CC-975B-4B18-B2D6-51C4671EAE54}|iquchnia\\iquchnia.csproj|solutionrelative:iquchnia\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4616D9CC-975B-4B18-B2D6-51C4671EAE54}|iquchnia\\iquchnia.csproj|c:\\studia\\gry\\gamejam\\ipziqchnia\\iquchnia\\iquchnia\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{4616D9CC-975B-4B18-B2D6-51C4671EAE54}|iquchnia\\iquchnia.csproj|solutionrelative:iquchnia\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{4616D9CC-975B-4B18-B2D6-51C4671EAE54}|iquchnia\\iquchnia.csproj|c:\\studia\\gry\\gamejam\\ipziqchnia\\iquchnia\\iquchnia\\viewmodels\\searchviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4616D9CC-975B-4B18-B2D6-51C4671EAE54}|iquchnia\\iquchnia.csproj|solutionrelative:iquchnia\\viewmodels\\searchviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,110 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "RecipeService.cs",
-              "DocumentMoniker": "C:\\Studia\\gry\\Gamejam\\IPZIQchnia\\iquchnia\\iquchnia\\Services\\RecipeService.cs",
-              "RelativeDocumentMoniker": "iquchnia\\Services\\RecipeService.cs",
-              "ToolTip": "C:\\Studia\\gry\\Gamejam\\IPZIQchnia\\iquchnia\\iquchnia\\Services\\RecipeService.cs",
-              "RelativeToolTip": "iquchnia\\Services\\RecipeService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-29T09:26:19.213Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Recipe.cs",
-              "DocumentMoniker": "C:\\Studia\\gry\\Gamejam\\IPZIQchnia\\iquchnia\\iquchnia\\Models\\Recipe.cs",
-              "RelativeDocumentMoniker": "iquchnia\\Models\\Recipe.cs",
-              "ToolTip": "C:\\Studia\\gry\\Gamejam\\IPZIQchnia\\iquchnia\\iquchnia\\Models\\Recipe.cs",
-              "RelativeToolTip": "iquchnia\\Models\\Recipe.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-29T09:26:15.477Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "SearchPage.xaml.cs",
-              "DocumentMoniker": "C:\\Studia\\gry\\Gamejam\\IPZIQchnia\\iquchnia\\iquchnia\\Views\\SearchPage.xaml.cs",
-              "RelativeDocumentMoniker": "iquchnia\\Views\\SearchPage.xaml.cs",
-              "ToolTip": "C:\\Studia\\gry\\Gamejam\\IPZIQchnia\\iquchnia\\iquchnia\\Views\\SearchPage.xaml.cs",
-              "RelativeToolTip": "iquchnia\\Views\\SearchPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-29T09:25:28.84Z",
+              "DocumentIndex": 0,
+              "Title": "SearchPage.xaml",
+              "DocumentMoniker": "C:\\Studia\\gry\\Gamejam\\IPZIQchnia\\iquchnia\\iquchnia\\Views\\SearchPage.xaml",
+              "RelativeDocumentMoniker": "iquchnia\\Views\\SearchPage.xaml",
+              "ToolTip": "C:\\Studia\\gry\\Gamejam\\IPZIQchnia\\iquchnia\\iquchnia\\Views\\SearchPage.xaml",
+              "RelativeToolTip": "iquchnia\\Views\\SearchPage.xaml",
+              "ViewState": "AgIAABoAAAAAAAAAAAAQwDYAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-03-29T10:39:43.846Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "SearchResultsPage.xaml.cs",
-              "DocumentMoniker": "C:\\Studia\\gry\\Gamejam\\IPZIQchnia\\iquchnia\\iquchnia\\Views\\SearchResultsPage.xaml.cs",
-              "RelativeDocumentMoniker": "iquchnia\\Views\\SearchResultsPage.xaml.cs",
-              "ToolTip": "C:\\Studia\\gry\\Gamejam\\IPZIQchnia\\iquchnia\\iquchnia\\Views\\SearchResultsPage.xaml.cs",
-              "RelativeToolTip": "iquchnia\\Views\\SearchResultsPage.xaml.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBoAAAAPAAAAAAAAAA==",
+              "Title": "SearchViewModel.cs",
+              "DocumentMoniker": "C:\\Studia\\gry\\Gamejam\\IPZIQchnia\\iquchnia\\iquchnia\\ViewModels\\SearchViewModel.cs",
+              "RelativeDocumentMoniker": "iquchnia\\ViewModels\\SearchViewModel.cs",
+              "ToolTip": "C:\\Studia\\gry\\Gamejam\\IPZIQchnia\\iquchnia\\iquchnia\\ViewModels\\SearchViewModel.cs",
+              "RelativeToolTip": "iquchnia\\ViewModels\\SearchViewModel.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAmwEcAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-29T09:25:11.505Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AppShell.xaml.cs",
-              "DocumentMoniker": "C:\\Studia\\gry\\Gamejam\\IPZIQchnia\\iquchnia\\iquchnia\\AppShell.xaml.cs",
-              "RelativeDocumentMoniker": "iquchnia\\AppShell.xaml.cs",
-              "ToolTip": "C:\\Studia\\gry\\Gamejam\\IPZIQchnia\\iquchnia\\iquchnia\\AppShell.xaml.cs",
-              "RelativeToolTip": "iquchnia\\AppShell.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-29T09:24:25.947Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AppShell.xaml",
-              "DocumentMoniker": "C:\\Studia\\gry\\Gamejam\\IPZIQchnia\\iquchnia\\iquchnia\\AppShell.xaml",
-              "RelativeDocumentMoniker": "iquchnia\\AppShell.xaml",
-              "ToolTip": "C:\\Studia\\gry\\Gamejam\\IPZIQchnia\\iquchnia\\iquchnia\\AppShell.xaml",
-              "RelativeToolTip": "iquchnia\\AppShell.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-03-29T09:24:24.599Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SearchResultsPage.xaml",
-              "DocumentMoniker": "C:\\Studia\\gry\\Gamejam\\IPZIQchnia\\iquchnia\\iquchnia\\Views\\SearchResultsPage.xaml",
-              "RelativeDocumentMoniker": "iquchnia\\Views\\SearchResultsPage.xaml",
-              "ToolTip": "C:\\Studia\\gry\\Gamejam\\IPZIQchnia\\iquchnia\\iquchnia\\Views\\SearchResultsPage.xaml",
-              "RelativeToolTip": "iquchnia\\Views\\SearchResultsPage.xaml",
-              "ViewState": "AgIAAHYAAAAAAAAAAAAAAIoAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-03-29T09:17:31.264Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IRecipeService.cs",
-              "DocumentMoniker": "C:\\Studia\\gry\\Gamejam\\IPZIQchnia\\iquchnia\\iquchnia\\Services\\IRecipeService.cs",
-              "RelativeDocumentMoniker": "iquchnia\\Services\\IRecipeService.cs",
-              "ToolTip": "C:\\Studia\\gry\\Gamejam\\IPZIQchnia\\iquchnia\\iquchnia\\Services\\IRecipeService.cs",
-              "RelativeToolTip": "iquchnia\\Services\\IRecipeService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-29T09:26:17.525Z",
+              "WhenOpened": "2026-03-29T10:37:53.052Z",
               "EditorCaption": ""
             }
           ]

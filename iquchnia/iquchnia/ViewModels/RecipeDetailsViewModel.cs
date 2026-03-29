@@ -8,7 +8,8 @@ public partial class RecipeDetailsViewModel : ObservableObject
 {
     [ObservableProperty]
     private Recipe recipe;
+       
 
-   
     public string IngredientsString => Recipe == null ? string.Empty : string.Join(", ", Recipe.Ingredients);
+
 }

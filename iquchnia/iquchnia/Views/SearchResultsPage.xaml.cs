@@ -1,5 +1,5 @@
 ﻿using iquchnia.ViewModels;
-using iquchnia.Models;   // WAŻNE
+using iquchnia.Models;   
 using System.Collections.Generic;
 using System.Linq;
 

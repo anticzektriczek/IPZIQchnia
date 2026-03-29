@@ -1,16 +1,76 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:vm="clr-namespace:iquchnia.ViewModels"
-             x:Class="iquchnia.Views.SearchPage"
-             x:DataType="vm:SearchViewModel"
-             Title="Wyszukiwarka Przepisów">
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:vm="clr-namespace:iquchnia.ViewModels"
+    x:Class="iquchnia.Views.SearchPage"
+    
+    Title="Wyszukiwarka Przepisów">
 
-    <VerticalStackLayout Padding="16" Spacing="10">
-        <Entry Placeholder="Wpisz składnik"
-               Text="{Binding IngredientsText}" />
+    <VerticalStackLayout Padding="20" Spacing="20">
 
+        <!-- INPUT + DODAJ -->
+        <HorizontalStackLayout Spacing="10">
+
+            <Entry Placeholder="Wpisz składnik"
+                   Text="{Binding CurrentIngredient}"
+                   FontSize="18"
+                   HeightRequest="50"
+                   HorizontalOptions="FillAndExpand"/>
+
+            <Button Text="+"
+                    FontSize="20"
+                    WidthRequest="50"
+                    HeightRequest="50"
+                    Command="{Binding AddIngredientCommand}" />
+
+        </HorizontalStackLayout>
+
+        <!-- TAGI (SKŁADNIKI) -->
+        <CollectionView ItemsSource="{Binding Ingredients}"
+                HeightRequest="150">
+
+            <CollectionView.ItemsLayout>
+                <GridItemsLayout Orientation="Vertical"
+                         Span="3" />
+            </CollectionView.ItemsLayout>
+
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="x:String">
+                    <Frame BackgroundColor="#555555"
+                   Padding="10"
+                   Margin="5"
+                   CornerRadius="15">
+
+                        <HorizontalStackLayout Spacing="6">
+
+                            <Label Text="{Binding}"
+                           FontSize="16"
+                           TextColor="White"/>
+
+                            <Label Text="✖"
+                           FontSize="16"
+                           TextColor="White">
+                                <Label.GestureRecognizers>
+                                    <TapGestureRecognizer
+                                Command="{Binding Source={RelativeSource AncestorType={x:Type vm:SearchViewModel}}, Path=RemoveIngredientCommand}"
+                                CommandParameter="{Binding}" />
+                                </Label.GestureRecognizers>
+                            </Label>
+
+                        </HorizontalStackLayout>
+
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+
+        </CollectionView>
+
+        <!-- SZUKAJ -->
         <Button Text="Szukaj"
+                FontSize="18"
+                HeightRequest="60"
                 Command="{Binding SearchCommand}" />
+
     </VerticalStackLayout>
+
 
 </ContentPage>
