@@ -1,16 +1,16 @@
-﻿using iquchnia.Views;
-using Microsoft.Maui.Controls;
+﻿using Microsoft.Maui.Controls;
+using iquchnia.Views;
 
-namespace iquchnia;
-
-public partial class AppShell : Shell
+namespace iquchnia
 {
-    public AppShell()
+    public partial class AppShell : Shell
     {
-        InitializeComponent();
-
-
-        Routing.RegisterRoute(nameof(SearchResultsPage), typeof(SearchResultsPage));
-        Routing.RegisterRoute(nameof(RecipeDetailsPage), typeof(RecipeDetailsPage));
+        public AppShell()
+        {
+            InitializeComponent();
+            Routing.RegisterRoute(nameof(SearchPage), typeof(SearchPage));
+            Routing.RegisterRoute(nameof(SearchResultsPage), typeof(SearchResultsPage));
+            Routing.RegisterRoute(nameof(RecipeDetailsPage), typeof(RecipeDetailsPage));
+        }
     }
 }

@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:vm="clr-namespace:iquchnia.ViewModels"
+    xmlns:models="clr-namespace:iquchnia.Models"
+    x:Class="iquchnia.Views.SearchResultsPage"
+    x:DataType="vm:SearchResultsViewModel"
+    Title="Wyniki wyszukiwania">
+
+	<VerticalStackLayout Padding="16" Spacing="12">
+
+		<!-- WIERSZ: FILTRY + SORTOWANIE -->
+		<Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="12">
+
+			<!-- PASEK FILTRÓW -->
+			<Frame Grid.Column="0"
+                   BackgroundColor="#444444"
+                   CornerRadius="12"
+                   Padding="12"
+                   HasShadow="True"
+                   WidthRequest="170"
+                   HorizontalOptions="Start">
+
+				<VerticalStackLayout Spacing="10">
+
+					<!-- Nagłówek -->
+					<Grid>
+						<Label Text="Filtry"
+                               FontSize="16"
+                               FontAttributes="Bold"
+                               TextColor="White" />
+
+						<Label Text="{Binding FiltersArrow}"
+                               FontSize="16"
+                               TextColor="White"
+                               HorizontalOptions="End" />
+
+						<Frame.GestureRecognizers>
+							<TapGestureRecognizer Command="{Binding ToggleFiltersCommand}" />
+						</Frame.GestureRecognizers>
+					</Grid>
+
+					<!-- Zawartość filtrów -->
+					<VerticalStackLayout IsVisible="{Binding AreFiltersVisible}"
+                                         Spacing="8">
+
+						<HorizontalStackLayout Spacing="10">
+							<CheckBox IsChecked="{Binding CzyWeganskie}" />
+							<Label Text="Wegańskie"
+                                   VerticalOptions="Center"
+                                   TextColor="White" />
+						</HorizontalStackLayout>
+
+						<HorizontalStackLayout Spacing="10">
+							<CheckBox IsChecked="{Binding CzyWegetarianskie}" />
+							<Label Text="Wegetariańskie"
+                                   VerticalOptions="Center"
+                                   TextColor="White" />
+						</HorizontalStackLayout>
+
+						<HorizontalStackLayout Spacing="10">
+							<CheckBox IsChecked="{Binding CzyOrzech}" />
+							<Label Text="Z orzechami"
+                                   VerticalOptions="Center"
+                                   TextColor="White" />
+						</HorizontalStackLayout>
+
+						<HorizontalStackLayout Spacing="10">
+							<CheckBox IsChecked="{Binding CzyNabial}" />
+							<Label Text="Z nabiałem"
+                                   VerticalOptions="Center"
+                                   TextColor="White" />
+						</HorizontalStackLayout>
+
+					</VerticalStackLayout>
+
+				</VerticalStackLayout>
+
+			</Frame>
+
+			<!-- wypełniacz -->
+			<BoxView Grid.Column="1" />
+
+			<!-- PASEK SORTOWANIA -->
+			<Frame Grid.Column="2"
+                   BackgroundColor="#444444"
+                   CornerRadius="12"
+                   Padding="12"
+                   HasShadow="True"
+                   WidthRequest="190"
+                   HorizontalOptions="End">
+
+				<VerticalStackLayout Spacing="10">
+
+					<!-- Nagłówek sortowania -->
+					<Grid>
+						<Label Text="Sortuj"
+                               FontSize="16"
+                               FontAttributes="Bold"
+                               TextColor="White" />
+
+						<Label Text="{Binding SortArrow}"
+                               FontSize="16"
+                               TextColor="White"
+                               HorizontalOptions="End" />
+
+						<Frame.GestureRecognizers>
+							<TapGestureRecognizer Command="{Binding ToggleSortCommand}" />
+						</Frame.GestureRecognizers>
+					</Grid>
+
+					<!-- Opcje sortowania -->
+					<VerticalStackLayout IsVisible="{Binding AreSortOptionsVisible}"
+                                         Spacing="8">
+
+						<RadioButton Content="Czas (rosnąco)"
+                                     IsChecked="{Binding SortByTimeAsc}" />
+
+						<RadioButton Content="Czas (malejąco)"
+                                     IsChecked="{Binding SortByTimeDesc}" />
+
+						<RadioButton Content="Trudność (łatwe → trudne)"
+                                     IsChecked="{Binding SortByDifficultyAsc}" />
+
+						<RadioButton Content="Trudność (trudne → łatwe)"
+                                     IsChecked="{Binding SortByDifficultyDesc}" />
+
+					</VerticalStackLayout>
+
+				</VerticalStackLayout>
+
+			</Frame>
+
+		</Grid>
+
+		<!-- LISTA WYNIKÓW -->
+		<CollectionView x:Name="RecipesCollection"
+                        ItemsSource="{Binding Recipes}"
+                        SelectionMode="Single"
+						SelectionChanged="OnRecipeSelected">
+            <CollectionView.ItemTemplate>
+				<DataTemplate x:DataType="models:Recipe">
+					<Frame Padding="10"
+                           Margin="5"
+                           BackgroundColor="LightGray"
+                           CornerRadius="8"
+                           HasShadow="True"
+                           InputTransparent="True">
+
+						<Label Text="{Binding Name}"
+                               FontSize="18"
+                               TextColor="Black" />
+					</Frame>
+				</DataTemplate>
+			</CollectionView.ItemTemplate>
+		</CollectionView>
+
+	</VerticalStackLayout>
+
+</ContentPage>

@@ -2,6 +2,7 @@
 using CommunityToolkit.Mvvm.Input;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using iquchnia.Views;
 
 namespace iquchnia.ViewModels;
 
@@ -16,8 +17,7 @@ public partial class SearchViewModel : ObservableObject
         if (string.IsNullOrWhiteSpace(IngredientsText))
             return;
 
-        // Przekazujemy składniki do strony z wynikami
-        await Shell.Current.GoToAsync(nameof(Views.SearchResultsPage), true,
+        await Shell.Current.GoToAsync(nameof(SearchResultsPage), true,
             new Dictionary<string, object>
             {
                 ["Ingredients"] = IngredientsText

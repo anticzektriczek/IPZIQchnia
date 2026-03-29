@@ -10,7 +10,8 @@
     <ScrollView Padding="16">
         <VerticalStackLayout Spacing="10">
             <Label Text="{Binding Recipe.Name}" FontSize="24" FontAttributes="Bold"/>
-            <Label Text="Skladniki:" FontAttributes="Bold"/>
+
+            <Label Text="Składniki:" FontAttributes="Bold"/>
             <Label Text="{Binding IngredientsString}" />
 
             <Label Text="Instrukcje:" FontAttributes="Bold"/>

@@ -11,6 +11,7 @@ public partial class App : Application
 
     protected override Window CreateWindow(IActivationState? activationState)
     {
+        // Ustawiamy główną stronę jako AppShell
         return new Window(new AppShell());
     }
 }

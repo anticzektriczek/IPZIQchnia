@@ -30,6 +30,9 @@
         <member name="P:iquchnia.ViewModels.SearchResultsViewModel.CzyNabial">
             <inheritdoc cref="F:iquchnia.ViewModels.SearchResultsViewModel.czyNabial"/>
         </member>
+        <member name="P:iquchnia.ViewModels.SearchResultsViewModel.AreFiltersVisible">
+            <inheritdoc cref="F:iquchnia.ViewModels.SearchResultsViewModel.areFiltersVisible"/>
+        </member>
         <member name="P:iquchnia.ViewModels.SearchResultsViewModel.AreSortOptionsVisible">
             <inheritdoc cref="F:iquchnia.ViewModels.SearchResultsViewModel.areSortOptionsVisible"/>
         </member>
@@ -44,9 +47,6 @@
         </member>
         <member name="P:iquchnia.ViewModels.SearchResultsViewModel.SortByDifficultyDesc">
             <inheritdoc cref="F:iquchnia.ViewModels.SearchResultsViewModel.sortByDifficultyDesc"/>
-        </member>
-        <member name="P:iquchnia.ViewModels.SearchResultsViewModel.AreFiltersVisible">
-            <inheritdoc cref="F:iquchnia.ViewModels.SearchResultsViewModel.areFiltersVisible"/>
         </member>
         <member name="M:iquchnia.ViewModels.SearchResultsViewModel.OnIngredientsTextChanged(System.String)">
             <summary>Executes the logic for when <see cref="P:iquchnia.ViewModels.SearchResultsViewModel.IngredientsText"/> just changed.</summary>
@@ -73,11 +73,6 @@
             <param name="value">The new property value that was set.</param>
             <remarks>This method is invoked right after the value of <see cref="P:iquchnia.ViewModels.SearchResultsViewModel.CzyNabial"/> is changed.</remarks>
         </member>
-        <member name="M:iquchnia.ViewModels.SearchResultsViewModel.OnAreSortOptionsVisibleChanged(System.Boolean)">
-            <summary>Executes the logic for when <see cref="P:iquchnia.ViewModels.SearchResultsViewModel.AreSortOptionsVisible"/> just changed.</summary>
-            <param name="value">The new property value that was set.</param>
-            <remarks>This method is invoked right after the value of <see cref="P:iquchnia.ViewModels.SearchResultsViewModel.AreSortOptionsVisible"/> is changed.</remarks>
-        </member>
         <member name="M:iquchnia.ViewModels.SearchResultsViewModel.OnSortByTimeAscChanged(System.Boolean)">
             <summary>Executes the logic for when <see cref="P:iquchnia.ViewModels.SearchResultsViewModel.SortByTimeAsc"/> just changed.</summary>
             <param name="value">The new property value that was set.</param>
@@ -97,11 +92,6 @@
             <summary>Executes the logic for when <see cref="P:iquchnia.ViewModels.SearchResultsViewModel.SortByDifficultyDesc"/> just changed.</summary>
             <param name="value">The new property value that was set.</param>
             <remarks>This method is invoked right after the value of <see cref="P:iquchnia.ViewModels.SearchResultsViewModel.SortByDifficultyDesc"/> is changed.</remarks>
-        </member>
-        <member name="M:iquchnia.ViewModels.SearchResultsViewModel.OnAreFiltersVisibleChanged(System.Boolean)">
-            <summary>Executes the logic for when <see cref="P:iquchnia.ViewModels.SearchResultsViewModel.AreFiltersVisible"/> just changed.</summary>
-            <param name="value">The new property value that was set.</param>
-            <remarks>This method is invoked right after the value of <see cref="P:iquchnia.ViewModels.SearchResultsViewModel.AreFiltersVisible"/> is changed.</remarks>
         </member>
         <member name="F:iquchnia.ViewModels.SearchResultsViewModel.toggleFiltersCommand">
             <summary>The backing field for <see cref="P:iquchnia.ViewModels.SearchResultsViewModel.ToggleFiltersCommand"/>.</summary>
@@ -158,6 +148,9 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.CzyNabial">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "CzyNabial" generated properties.</summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.AreFiltersVisible">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "AreFiltersVisible" generated properties.</summary>
+        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.AreSortOptionsVisible">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "AreSortOptionsVisible" generated properties.</summary>
         </member>
@@ -172,9 +165,6 @@
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SortByDifficultyDesc">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SortByDifficultyDesc" generated properties.</summary>
-        </member>
-        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.AreFiltersVisible">
-            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "AreFiltersVisible" generated properties.</summary>
         </member>
         <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
             <summary>
@@ -200,6 +190,9 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.CzyNabial">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "CzyNabial" generated properties.</summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.AreFiltersVisible">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "AreFiltersVisible" generated properties.</summary>
+        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.AreSortOptionsVisible">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "AreSortOptionsVisible" generated properties.</summary>
         </member>
@@ -214,9 +207,6 @@
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SortByDifficultyDesc">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SortByDifficultyDesc" generated properties.</summary>
-        </member>
-        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.AreFiltersVisible">
-            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "AreFiltersVisible" generated properties.</summary>
         </member>
     </members>
 </doc>

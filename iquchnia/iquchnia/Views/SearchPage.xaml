@@ -1,24 +1,16 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage
-    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:vm="clr-namespace:iquchnia.ViewModels"
-    x:Class="iquchnia.Views.SearchPage"
-    x:DataType="vm:SearchViewModel"
-    Title="Wyszukiwarka Przepisów">
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:iquchnia.ViewModels"
+             x:Class="iquchnia.Views.SearchPage"
+             x:DataType="vm:SearchViewModel"
+             Title="Wyszukiwarka Przepisów">
 
     <VerticalStackLayout Padding="16" Spacing="10">
+        <Entry Placeholder="Wpisz składnik"
+               Text="{Binding IngredientsText}" />
 
-        <!-- Pole tekstowe na składniki -->
-        <Entry
-            Placeholder="Wpisz składniki (np. pomidor, makaron)"
-            Text="{Binding IngredientsText}" />
-
-        <!-- Przycisk Szukaj -->
-        <Button
-            Text="Szukaj"
-            Command="{Binding SearchCommand}" />
-
+        <Button Text="Szukaj"
+                Command="{Binding SearchCommand}" />
     </VerticalStackLayout>
 
 </ContentPage>
