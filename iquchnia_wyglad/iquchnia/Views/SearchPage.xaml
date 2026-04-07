@@ -1,7 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:vm="clr-namespace:iquchnia.ViewModels"
              x:Class="iquchnia.Views.SearchPage"
+             x:DataType="vm:SearchViewModel"
              Title="iQchnia"
              BackgroundColor="#F5F5F5"
              Shell.NavBarIsVisible="False">
@@ -29,11 +31,8 @@
                    TextColor="#FFFFFF" 
                    HorizontalOptions="Center"
                    Margin="0,10,0,10" />
-            
-            
 
             <Grid Grid.Row="1" ColumnDefinitions="*, Auto" ColumnSpacing="10">
-
                 <Border StrokeShape="RoundRectangle 15"
                         StrokeThickness="0"
                         BackgroundColor="White"
@@ -75,32 +74,33 @@
                 <CollectionView.ItemTemplate>
                     <DataTemplate x:DataType="x:String">
                         <Frame BackgroundColor="#D3C4B7"
-                               Padding="12,8"
+                               Padding="10,8"
                                Margin="2"
                                HasShadow="False"
                                BorderColor="Transparent"
                                CornerRadius="12">
 
-                            <HorizontalStackLayout Spacing="8" 
-                                                   HorizontalOptions="Center" 
-                                                   VerticalOptions="Center">
+                            <Grid ColumnDefinitions="*, Auto" ColumnSpacing="5">
 
                                 <Label Text="{Binding}"
-                                       FontSize="15"
-                                       TextColor="White"
-                                       VerticalOptions="Center"/>
-
-                                <Label Text="✖"
                                        FontSize="14"
+                                       TextColor="White"
+                                       VerticalOptions="Center"
+                                       LineBreakMode="TailTruncation" />
+                                <Label Grid.Column="1"
+                                       Text="✖"
+                                       FontSize="16"
                                        TextColor="#FFFFFF"
-                                       VerticalOptions="Center">
+                                       VerticalOptions="Center"
+                                       HorizontalOptions="End"
+                                       Padding="5">
                                     <Label.GestureRecognizers>
                                         <TapGestureRecognizer
                                             Command="{Binding Source={RelativeSource AncestorType={x:Type vm:SearchViewModel}}, Path=RemoveIngredientCommand}"
                                             CommandParameter="{Binding}" />
                                     </Label.GestureRecognizers>
                                 </Label>
-                            </HorizontalStackLayout>
+                            </Grid>
                         </Frame>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
