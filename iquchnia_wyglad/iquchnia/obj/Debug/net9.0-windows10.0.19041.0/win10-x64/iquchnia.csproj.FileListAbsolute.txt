@@ -3058,3 +3058,9 @@ C:\Users\48883\IPZIQchnia\iquchnia_wyglad2\iquchnia\obj\Debug\net9.0-windows10.0
 C:\Users\48883\IPZIQchnia\iquchnia_wyglad2\iquchnia\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\qualifiers.txt
 C:\Users\48883\IPZIQchnia\iquchnia_wyglad2\iquchnia\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 C:\Users\48883\IPZIQchnia\iquchnia_wyglad2\iquchnia\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
+C:\Users\48883\IPZIQchnia\iquchnia_wyglad\iquchnia\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\recipes.db
+C:\Users\48883\IPZIQchnia\iquchnia_wyglad\iquchnia\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\SQLite-net.dll
+C:\Users\48883\IPZIQchnia\iquchnia_wyglad\iquchnia\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\SQLitePCLRaw.batteries_v2.dll
+C:\Users\48883\IPZIQchnia\iquchnia_wyglad\iquchnia\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\SQLitePCLRaw.core.dll
+C:\Users\48883\IPZIQchnia\iquchnia_wyglad\iquchnia\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\Users\48883\IPZIQchnia\iquchnia_wyglad\iquchnia\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\e_sqlite3.dll
