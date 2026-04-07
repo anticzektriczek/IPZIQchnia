@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:vm="clr-namespace:iquchnia.ViewModels"
+    xmlns:models="clr-namespace:iquchnia.Models"
+    x:Class="iquchnia.Views.SearchResultsPage"
+    x:DataType="vm:SearchResultsViewModel"
+    Title="iQchnia"
+    BackgroundColor="#F5F5F5"
+    Shell.NavBarIsVisible="False">
+
+    
+    <Grid RowDefinitions="*, Auto">
+
+        <BoxView Grid.RowSpan="2" VerticalOptions="Start" HeightRequest="250">
+            <BoxView.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                    <GradientStop Color="#D3C4B7" Offset="0.0" />
+                    <GradientStop Color="Transparent" Offset="1.0" />
+                </LinearGradientBrush>
+            </BoxView.Background>
+        </BoxView>
+
+        <Grid Grid.Row="0" 
+              RowDefinitions="Auto, Auto, *" 
+              Padding="5" 
+              RowSpacing="20">
+
+            <Label Grid.Row="0"
+                   Text="Wyniki wyszukiwania"
+                   FontSize="28"
+                   FontAttributes="Bold"
+                   TextColor="#FFFFFF" 
+                   HorizontalOptions="Center"
+                   Margin="0,10,0,10" />
+
+            <Grid Grid.Row="1" ColumnDefinitions="Auto,*,Auto" ColumnSpacing="6">
+
+                <Frame Grid.Column="0"
+                       BackgroundColor="White"
+                       CornerRadius="15"
+                       Padding="12"
+                       HasShadow="False"
+                       BorderColor="Transparent"
+                       WidthRequest="140"
+                       Margin="20,0,0,0"
+                       HorizontalOptions="Start">
+
+                    <VerticalStackLayout Spacing="10">
+
+                        <Grid>
+                            <Label Text="Filtry"
+                                   FontSize="16"
+                                   FontAttributes="Bold"
+                                   TextColor="#4A4A4A" />
+
+                            <Label Text="{Binding FiltersArrow}"
+                                   FontSize="16"
+                                   TextColor="#4A4A4A"
+                                   HorizontalOptions="End" />
+
+                            <Grid.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding ToggleFiltersCommand}" />
+                            </Grid.GestureRecognizers>
+                        </Grid>
+
+                        <VerticalStackLayout IsVisible="{Binding AreFiltersVisible}"
+                                             Spacing="8">
+
+                            <HorizontalStackLayout Spacing="10">
+                                <CheckBox IsChecked="{Binding CzyWeganskie}" Color="#D3C4B7" />
+                                <Label Text="Wegańskie"
+                                       VerticalOptions="Center"
+                                       TextColor="#4A4A4A" />
+                            </HorizontalStackLayout>
+
+                            <HorizontalStackLayout Spacing="10">
+                                <CheckBox IsChecked="{Binding CzyWegetarianskie}" Color="#D3C4B7" />
+                                <Label Text="Wegetariańskie"
+                                       VerticalOptions="Center"
+                                       TextColor="#4A4A4A" />
+                            </HorizontalStackLayout>
+
+                            <HorizontalStackLayout Spacing="10">
+                                <CheckBox IsChecked="{Binding CzyOrzech}" Color="#D3C4B7" />
+                                <Label Text="Z orzechami"
+                                       VerticalOptions="Center"
+                                       TextColor="#4A4A4A" />
+                            </HorizontalStackLayout>
+
+                            <HorizontalStackLayout Spacing="10">
+                                <CheckBox IsChecked="{Binding CzyNabial}" Color="#D3C4B7" />
+                                <Label Text="Z nabiałem"
+                                       VerticalOptions="Center"
+                                       TextColor="#4A4A4A" />
+                            </HorizontalStackLayout>
+
+                        </VerticalStackLayout>
+
+                    </VerticalStackLayout>
+
+                </Frame>
+
+                <BoxView Grid.Column="1" BackgroundColor="Transparent" />
+
+                <Frame Grid.Column="2"
+                       BackgroundColor="White"
+                       CornerRadius="15"
+                       Padding="12"
+                       HasShadow="False"
+                       BorderColor="Transparent"
+                       WidthRequest="140"
+                       Margin="0,0,20,0"
+                       HorizontalOptions="End">
+
+                    <VerticalStackLayout Spacing="10">
+
+                        <Grid>
+                            <Label Text="Sortuj"
+                                   FontSize="16"
+                                   FontAttributes="Bold"
+                                   TextColor="#4A4A4A" />
+
+                            <Label Text="{Binding SortArrow}"
+                                   FontSize="16"
+                                   TextColor="#4A4A4A"
+                                   HorizontalOptions="End" />
+
+                            <Grid.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding ToggleSortCommand}" />
+                            </Grid.GestureRecognizers>
+                        </Grid>
+
+                        <VerticalStackLayout IsVisible="{Binding AreSortOptionsVisible}"
+                                             Spacing="8">
+
+                            <RadioButton Content="Czas (rosnąco)"
+                                         TextColor="#4A4A4A"
+                                         IsChecked="{Binding SortByTimeAsc}" />
+
+                            <RadioButton Content="Czas (malejąco)"
+                                         TextColor="#4A4A4A"
+                                         IsChecked="{Binding SortByTimeDesc}" />
+
+                            <RadioButton Content="Trudność (łatwe)"
+                                         TextColor="#4A4A4A"
+                                         IsChecked="{Binding SortByDifficultyAsc}" />
+
+                            <RadioButton Content="Trudność (trudne)"
+                                         TextColor="#4A4A4A"
+                                         IsChecked="{Binding SortByDifficultyDesc}" />
+
+                        </VerticalStackLayout>
+
+                    </VerticalStackLayout>
+
+                </Frame>
+
+            </Grid>
+
+            <CollectionView x:Name="RecipesCollection"
+                            ItemsSource="{Binding Recipes}"
+                            SelectionMode="Single"
+                            SelectionChanged="OnRecipeSelected"
+                            VerticalScrollBarVisibility="Never">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="models:Recipe">
+
+                        <Frame Padding="15"
+                               Margin="0,5"
+                               BackgroundColor="#D3C4B7"
+                               CornerRadius="20"
+                               HasShadow="False"
+                               BorderColor="Transparent"
+                               InputTransparent="True">
+
+                            <Label Text="{Binding Name}"
+                                   FontSize="18"
+                                   FontAttributes="Bold"
+                                   TextColor="White" />
+                        </Frame>
+
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+        </Grid>
+    </Grid>
+</ContentPage>
