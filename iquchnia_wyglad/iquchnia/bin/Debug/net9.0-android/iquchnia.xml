@@ -1,0 +1,237 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>iquchnia</name>
+    </assembly>
+    <members>
+        <member name="T:iquchnia.ViewModels.RecipeDetailsViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:iquchnia.ViewModels.RecipeDetailsViewModel.Recipe">
+            <inheritdoc cref="F:iquchnia.ViewModels.RecipeDetailsViewModel.recipe"/>
+        </member>
+        <member name="T:iquchnia.ViewModels.SearchResultsViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:iquchnia.ViewModels.SearchResultsViewModel.IngredientsText">
+            <inheritdoc cref="F:iquchnia.ViewModels.SearchResultsViewModel.ingredientsText"/>
+        </member>
+        <member name="P:iquchnia.ViewModels.SearchResultsViewModel.CzyWeganskie">
+            <inheritdoc cref="F:iquchnia.ViewModels.SearchResultsViewModel.czyWeganskie"/>
+        </member>
+        <member name="P:iquchnia.ViewModels.SearchResultsViewModel.CzyWegetarianskie">
+            <inheritdoc cref="F:iquchnia.ViewModels.SearchResultsViewModel.czyWegetarianskie"/>
+        </member>
+        <member name="P:iquchnia.ViewModels.SearchResultsViewModel.CzyOrzech">
+            <inheritdoc cref="F:iquchnia.ViewModels.SearchResultsViewModel.czyOrzech"/>
+        </member>
+        <member name="P:iquchnia.ViewModels.SearchResultsViewModel.CzyNabial">
+            <inheritdoc cref="F:iquchnia.ViewModels.SearchResultsViewModel.czyNabial"/>
+        </member>
+        <member name="P:iquchnia.ViewModels.SearchResultsViewModel.AreFiltersVisible">
+            <inheritdoc cref="F:iquchnia.ViewModels.SearchResultsViewModel.areFiltersVisible"/>
+        </member>
+        <member name="P:iquchnia.ViewModels.SearchResultsViewModel.AreSortOptionsVisible">
+            <inheritdoc cref="F:iquchnia.ViewModels.SearchResultsViewModel.areSortOptionsVisible"/>
+        </member>
+        <member name="P:iquchnia.ViewModels.SearchResultsViewModel.SortByTimeAsc">
+            <inheritdoc cref="F:iquchnia.ViewModels.SearchResultsViewModel.sortByTimeAsc"/>
+        </member>
+        <member name="P:iquchnia.ViewModels.SearchResultsViewModel.SortByTimeDesc">
+            <inheritdoc cref="F:iquchnia.ViewModels.SearchResultsViewModel.sortByTimeDesc"/>
+        </member>
+        <member name="P:iquchnia.ViewModels.SearchResultsViewModel.SortByDifficultyAsc">
+            <inheritdoc cref="F:iquchnia.ViewModels.SearchResultsViewModel.sortByDifficultyAsc"/>
+        </member>
+        <member name="P:iquchnia.ViewModels.SearchResultsViewModel.SortByDifficultyDesc">
+            <inheritdoc cref="F:iquchnia.ViewModels.SearchResultsViewModel.sortByDifficultyDesc"/>
+        </member>
+        <member name="M:iquchnia.ViewModels.SearchResultsViewModel.OnIngredientsTextChanged(System.String)">
+            <summary>Executes the logic for when <see cref="P:iquchnia.ViewModels.SearchResultsViewModel.IngredientsText"/> just changed.</summary>
+            <param name="value">The new property value that was set.</param>
+            <remarks>This method is invoked right after the value of <see cref="P:iquchnia.ViewModels.SearchResultsViewModel.IngredientsText"/> is changed.</remarks>
+        </member>
+        <member name="M:iquchnia.ViewModels.SearchResultsViewModel.OnCzyWeganskieChanged(System.Boolean)">
+            <summary>Executes the logic for when <see cref="P:iquchnia.ViewModels.SearchResultsViewModel.CzyWeganskie"/> just changed.</summary>
+            <param name="value">The new property value that was set.</param>
+            <remarks>This method is invoked right after the value of <see cref="P:iquchnia.ViewModels.SearchResultsViewModel.CzyWeganskie"/> is changed.</remarks>
+        </member>
+        <member name="M:iquchnia.ViewModels.SearchResultsViewModel.OnCzyWegetarianskieChanged(System.Boolean)">
+            <summary>Executes the logic for when <see cref="P:iquchnia.ViewModels.SearchResultsViewModel.CzyWegetarianskie"/> just changed.</summary>
+            <param name="value">The new property value that was set.</param>
+            <remarks>This method is invoked right after the value of <see cref="P:iquchnia.ViewModels.SearchResultsViewModel.CzyWegetarianskie"/> is changed.</remarks>
+        </member>
+        <member name="M:iquchnia.ViewModels.SearchResultsViewModel.OnCzyOrzechChanged(System.Boolean)">
+            <summary>Executes the logic for when <see cref="P:iquchnia.ViewModels.SearchResultsViewModel.CzyOrzech"/> just changed.</summary>
+            <param name="value">The new property value that was set.</param>
+            <remarks>This method is invoked right after the value of <see cref="P:iquchnia.ViewModels.SearchResultsViewModel.CzyOrzech"/> is changed.</remarks>
+        </member>
+        <member name="M:iquchnia.ViewModels.SearchResultsViewModel.OnCzyNabialChanged(System.Boolean)">
+            <summary>Executes the logic for when <see cref="P:iquchnia.ViewModels.SearchResultsViewModel.CzyNabial"/> just changed.</summary>
+            <param name="value">The new property value that was set.</param>
+            <remarks>This method is invoked right after the value of <see cref="P:iquchnia.ViewModels.SearchResultsViewModel.CzyNabial"/> is changed.</remarks>
+        </member>
+        <member name="M:iquchnia.ViewModels.SearchResultsViewModel.OnSortByTimeAscChanged(System.Boolean)">
+            <summary>Executes the logic for when <see cref="P:iquchnia.ViewModels.SearchResultsViewModel.SortByTimeAsc"/> just changed.</summary>
+            <param name="value">The new property value that was set.</param>
+            <remarks>This method is invoked right after the value of <see cref="P:iquchnia.ViewModels.SearchResultsViewModel.SortByTimeAsc"/> is changed.</remarks>
+        </member>
+        <member name="M:iquchnia.ViewModels.SearchResultsViewModel.OnSortByTimeDescChanged(System.Boolean)">
+            <summary>Executes the logic for when <see cref="P:iquchnia.ViewModels.SearchResultsViewModel.SortByTimeDesc"/> just changed.</summary>
+            <param name="value">The new property value that was set.</param>
+            <remarks>This method is invoked right after the value of <see cref="P:iquchnia.ViewModels.SearchResultsViewModel.SortByTimeDesc"/> is changed.</remarks>
+        </member>
+        <member name="M:iquchnia.ViewModels.SearchResultsViewModel.OnSortByDifficultyAscChanged(System.Boolean)">
+            <summary>Executes the logic for when <see cref="P:iquchnia.ViewModels.SearchResultsViewModel.SortByDifficultyAsc"/> just changed.</summary>
+            <param name="value">The new property value that was set.</param>
+            <remarks>This method is invoked right after the value of <see cref="P:iquchnia.ViewModels.SearchResultsViewModel.SortByDifficultyAsc"/> is changed.</remarks>
+        </member>
+        <member name="M:iquchnia.ViewModels.SearchResultsViewModel.OnSortByDifficultyDescChanged(System.Boolean)">
+            <summary>Executes the logic for when <see cref="P:iquchnia.ViewModels.SearchResultsViewModel.SortByDifficultyDesc"/> just changed.</summary>
+            <param name="value">The new property value that was set.</param>
+            <remarks>This method is invoked right after the value of <see cref="P:iquchnia.ViewModels.SearchResultsViewModel.SortByDifficultyDesc"/> is changed.</remarks>
+        </member>
+        <member name="F:iquchnia.ViewModels.SearchResultsViewModel.toggleFiltersCommand">
+            <summary>The backing field for <see cref="P:iquchnia.ViewModels.SearchResultsViewModel.ToggleFiltersCommand"/>.</summary>
+        </member>
+        <member name="P:iquchnia.ViewModels.SearchResultsViewModel.ToggleFiltersCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:iquchnia.ViewModels.SearchResultsViewModel.ToggleFilters"/>.</summary>
+        </member>
+        <member name="F:iquchnia.ViewModels.SearchResultsViewModel.toggleSortCommand">
+            <summary>The backing field for <see cref="P:iquchnia.ViewModels.SearchResultsViewModel.ToggleSortCommand"/>.</summary>
+        </member>
+        <member name="P:iquchnia.ViewModels.SearchResultsViewModel.ToggleSortCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:iquchnia.ViewModels.SearchResultsViewModel.ToggleSort"/>.</summary>
+        </member>
+        <member name="T:iquchnia.ViewModels.SearchViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:iquchnia.ViewModels.SearchViewModel.CurrentIngredient">
+            <inheritdoc cref="F:iquchnia.ViewModels.SearchViewModel.currentIngredient"/>
+        </member>
+        <member name="M:iquchnia.ViewModels.SearchViewModel.OnCurrentIngredientChanged(System.String)">
+            <summary>Executes the logic for when <see cref="P:iquchnia.ViewModels.SearchViewModel.CurrentIngredient"/> just changed.</summary>
+            <param name="value">The new property value that was set.</param>
+            <remarks>This method is invoked right after the value of <see cref="P:iquchnia.ViewModels.SearchViewModel.CurrentIngredient"/> is changed.</remarks>
+        </member>
+        <member name="F:iquchnia.ViewModels.SearchViewModel.addIngredientCommand">
+            <summary>The backing field for <see cref="P:iquchnia.ViewModels.SearchViewModel.AddIngredientCommand"/>.</summary>
+        </member>
+        <member name="P:iquchnia.ViewModels.SearchViewModel.AddIngredientCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:iquchnia.ViewModels.SearchViewModel.AddIngredient(System.String)"/>.</summary>
+        </member>
+        <member name="F:iquchnia.ViewModels.SearchViewModel.removeIngredientCommand">
+            <summary>The backing field for <see cref="P:iquchnia.ViewModels.SearchViewModel.RemoveIngredientCommand"/>.</summary>
+        </member>
+        <member name="P:iquchnia.ViewModels.SearchViewModel.RemoveIngredientCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:iquchnia.ViewModels.SearchViewModel.RemoveIngredient(System.String)"/>.</summary>
+        </member>
+        <member name="F:iquchnia.ViewModels.SearchViewModel.searchCommand">
+            <summary>The backing field for <see cref="P:iquchnia.ViewModels.SearchViewModel.SearchCommand"/>.</summary>
+        </member>
+        <member name="P:iquchnia.ViewModels.SearchViewModel.SearchCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:iquchnia.ViewModels.SearchViewModel.Search"/>.</summary>
+        </member>
+        <member name="T:iquchnia.Resource">
+            <summary>
+            Android Resource Designer class.
+            Exposes the Android Resource designer assembly into the project Namespace.
+            </summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Recipe">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Recipe" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IngredientsText">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IngredientsText" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.CzyWeganskie">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "CzyWeganskie" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.CzyWegetarianskie">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "CzyWegetarianskie" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.CzyOrzech">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "CzyOrzech" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.CzyNabial">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "CzyNabial" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.AreFiltersVisible">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "AreFiltersVisible" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.AreSortOptionsVisible">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "AreSortOptionsVisible" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SortByTimeAsc">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SortByTimeAsc" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SortByTimeDesc">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SortByTimeDesc" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SortByDifficultyAsc">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SortByDifficultyAsc" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SortByDifficultyDesc">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SortByDifficultyDesc" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.CurrentIngredient">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "CurrentIngredient" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Recipe">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Recipe" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IngredientsText">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IngredientsText" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.CzyWeganskie">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "CzyWeganskie" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.CzyWegetarianskie">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "CzyWegetarianskie" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.CzyOrzech">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "CzyOrzech" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.CzyNabial">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "CzyNabial" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.AreFiltersVisible">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "AreFiltersVisible" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.AreSortOptionsVisible">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "AreSortOptionsVisible" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SortByTimeAsc">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SortByTimeAsc" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SortByTimeDesc">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SortByTimeDesc" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SortByDifficultyAsc">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SortByDifficultyAsc" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SortByDifficultyDesc">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SortByDifficultyDesc" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.CurrentIngredient">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "CurrentIngredient" generated properties.</summary>
+        </member>
+    </members>
+</doc>

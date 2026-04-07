@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\48883\\iQchnia_wyglad\\iquchnia_wyglad\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4616D9CC-975B-4B18-B2D6-51C4671EAE54}|iquchnia\\iquchnia.csproj|c:\\users\\48883\\iqchnia_wyglad\\iquchnia_wyglad\\iquchnia\\views\\searchpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4616D9CC-975B-4B18-B2D6-51C4671EAE54}|iquchnia\\iquchnia.csproj|solutionrelative:iquchnia\\views\\searchpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4616D9CC-975B-4B18-B2D6-51C4671EAE54}|iquchnia\\iquchnia.csproj|c:\\users\\48883\\iqchnia_wyglad\\iquchnia_wyglad\\iquchnia\\views\\searchresultspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4616D9CC-975B-4B18-B2D6-51C4671EAE54}|iquchnia\\iquchnia.csproj|solutionrelative:iquchnia\\views\\searchresultspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SearchPage.xaml",
+              "DocumentMoniker": "C:\\Users\\48883\\iQchnia_wyglad\\iquchnia_wyglad\\iquchnia\\Views\\SearchPage.xaml",
+              "RelativeDocumentMoniker": "iquchnia\\Views\\SearchPage.xaml",
+              "ToolTip": "C:\\Users\\48883\\iQchnia_wyglad\\iquchnia_wyglad\\iquchnia\\Views\\SearchPage.xaml",
+              "RelativeToolTip": "iquchnia\\Views\\SearchPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-03-29T10:39:43.846Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SearchResultsPage.xaml",
+              "DocumentMoniker": "C:\\Users\\48883\\iQchnia_wyglad\\iquchnia_wyglad\\iquchnia\\Views\\SearchResultsPage.xaml",
+              "RelativeDocumentMoniker": "iquchnia\\Views\\SearchResultsPage.xaml",
+              "ToolTip": "C:\\Users\\48883\\iQchnia_wyglad\\iquchnia_wyglad\\iquchnia\\Views\\SearchResultsPage.xaml",
+              "RelativeToolTip": "iquchnia\\Views\\SearchResultsPage.xaml",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAcwIoAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-07T11:42:58.664Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
