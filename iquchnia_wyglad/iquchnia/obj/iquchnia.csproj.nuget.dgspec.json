@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\48883\\IPZIQchnia\\iquchnia_wyglad\\iquchnia\\iquchnia.csproj": {}
+    "C:\\Users\\48883\\IPZIQchnia\\iquchnia_wyglad2\\iquchnia\\iquchnia.csproj": {}
   },
   "projects": {
-    "C:\\Users\\48883\\IPZIQchnia\\iquchnia_wyglad\\iquchnia\\iquchnia.csproj": {
+    "C:\\Users\\48883\\IPZIQchnia\\iquchnia_wyglad2\\iquchnia\\iquchnia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\48883\\IPZIQchnia\\iquchnia_wyglad\\iquchnia\\iquchnia.csproj",
+        "projectUniqueName": "C:\\Users\\48883\\IPZIQchnia\\iquchnia_wyglad2\\iquchnia\\iquchnia.csproj",
         "projectName": "iquchnia",
-        "projectPath": "C:\\Users\\48883\\IPZIQchnia\\iquchnia_wyglad\\iquchnia\\iquchnia.csproj",
+        "projectPath": "C:\\Users\\48883\\IPZIQchnia\\iquchnia_wyglad2\\iquchnia\\iquchnia.csproj",
         "packagesPath": "C:\\Users\\48883\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\48883\\IPZIQchnia\\iquchnia_wyglad\\iquchnia\\obj\\",
+        "outputPath": "C:\\Users\\48883\\IPZIQchnia\\iquchnia_wyglad2\\iquchnia\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
@@ -84,6 +84,10 @@
               "target": "Package",
               "version": "[9.0.5, )",
               "autoReferenced": true
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.9.172, )"
             }
           },
           "imports": [
@@ -127,6 +131,10 @@
               "target": "Package",
               "version": "[9.0.5, )",
               "autoReferenced": true
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.9.172, )"
             }
           },
           "imports": [
@@ -170,6 +178,10 @@
               "target": "Package",
               "version": "[9.0.5, )",
               "autoReferenced": true
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.9.172, )"
             }
           },
           "imports": [
@@ -208,6 +220,10 @@
             "Microsoft.Maui.Controls": {
               "target": "Package",
               "version": "[9.0.51, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.9.172, )"
             }
           },
           "imports": [

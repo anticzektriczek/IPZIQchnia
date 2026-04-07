@@ -14,9 +14,16 @@
             <inheritdoc/>
             <inheritdoc/>
             <inheritdoc/>
+            <inheritdoc/>
         </member>
         <member name="P:iquchnia.ViewModels.SearchResultsViewModel.IngredientsText">
             <inheritdoc cref="F:iquchnia.ViewModels.SearchResultsViewModel.ingredientsText"/>
+        </member>
+        <member name="P:iquchnia.ViewModels.SearchResultsViewModel.AreFiltersVisible">
+            <inheritdoc cref="F:iquchnia.ViewModels.SearchResultsViewModel.areFiltersVisible"/>
+        </member>
+        <member name="P:iquchnia.ViewModels.SearchResultsViewModel.FiltersArrow">
+            <inheritdoc cref="F:iquchnia.ViewModels.SearchResultsViewModel.filtersArrow"/>
         </member>
         <member name="P:iquchnia.ViewModels.SearchResultsViewModel.CzyWeganskie">
             <inheritdoc cref="F:iquchnia.ViewModels.SearchResultsViewModel.czyWeganskie"/>
@@ -30,11 +37,11 @@
         <member name="P:iquchnia.ViewModels.SearchResultsViewModel.CzyNabial">
             <inheritdoc cref="F:iquchnia.ViewModels.SearchResultsViewModel.czyNabial"/>
         </member>
-        <member name="P:iquchnia.ViewModels.SearchResultsViewModel.AreFiltersVisible">
-            <inheritdoc cref="F:iquchnia.ViewModels.SearchResultsViewModel.areFiltersVisible"/>
-        </member>
         <member name="P:iquchnia.ViewModels.SearchResultsViewModel.AreSortOptionsVisible">
             <inheritdoc cref="F:iquchnia.ViewModels.SearchResultsViewModel.areSortOptionsVisible"/>
+        </member>
+        <member name="P:iquchnia.ViewModels.SearchResultsViewModel.SortArrow">
+            <inheritdoc cref="F:iquchnia.ViewModels.SearchResultsViewModel.sortArrow"/>
         </member>
         <member name="P:iquchnia.ViewModels.SearchResultsViewModel.SortByTimeAsc">
             <inheritdoc cref="F:iquchnia.ViewModels.SearchResultsViewModel.sortByTimeAsc"/>
@@ -105,6 +112,12 @@
         <member name="P:iquchnia.ViewModels.SearchResultsViewModel.ToggleSortCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:iquchnia.ViewModels.SearchResultsViewModel.ToggleSort"/>.</summary>
         </member>
+        <member name="F:iquchnia.ViewModels.SearchResultsViewModel.goToDetailsCommand">
+            <summary>The backing field for <see cref="P:iquchnia.ViewModels.SearchResultsViewModel.GoToDetailsCommand"/>.</summary>
+        </member>
+        <member name="P:iquchnia.ViewModels.SearchResultsViewModel.GoToDetailsCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:iquchnia.ViewModels.SearchResultsViewModel.GoToDetails(iquchnia.Models.Recipe)"/>.</summary>
+        </member>
         <member name="T:iquchnia.ViewModels.SearchViewModel">
             <inheritdoc/>
             <inheritdoc/>
@@ -114,16 +127,11 @@
         <member name="P:iquchnia.ViewModels.SearchViewModel.CurrentIngredient">
             <inheritdoc cref="F:iquchnia.ViewModels.SearchViewModel.currentIngredient"/>
         </member>
-        <member name="M:iquchnia.ViewModels.SearchViewModel.OnCurrentIngredientChanged(System.String)">
-            <summary>Executes the logic for when <see cref="P:iquchnia.ViewModels.SearchViewModel.CurrentIngredient"/> just changed.</summary>
-            <param name="value">The new property value that was set.</param>
-            <remarks>This method is invoked right after the value of <see cref="P:iquchnia.ViewModels.SearchViewModel.CurrentIngredient"/> is changed.</remarks>
-        </member>
         <member name="F:iquchnia.ViewModels.SearchViewModel.addIngredientCommand">
             <summary>The backing field for <see cref="P:iquchnia.ViewModels.SearchViewModel.AddIngredientCommand"/>.</summary>
         </member>
         <member name="P:iquchnia.ViewModels.SearchViewModel.AddIngredientCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:iquchnia.ViewModels.SearchViewModel.AddIngredient(System.String)"/>.</summary>
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:iquchnia.ViewModels.SearchViewModel.AddIngredient"/>.</summary>
         </member>
         <member name="F:iquchnia.ViewModels.SearchViewModel.removeIngredientCommand">
             <summary>The backing field for <see cref="P:iquchnia.ViewModels.SearchViewModel.RemoveIngredientCommand"/>.</summary>
@@ -155,6 +163,12 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IngredientsText">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IngredientsText" generated properties.</summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.AreFiltersVisible">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "AreFiltersVisible" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.FiltersArrow">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "FiltersArrow" generated properties.</summary>
+        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.CzyWeganskie">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "CzyWeganskie" generated properties.</summary>
         </member>
@@ -167,11 +181,11 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.CzyNabial">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "CzyNabial" generated properties.</summary>
         </member>
-        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.AreFiltersVisible">
-            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "AreFiltersVisible" generated properties.</summary>
-        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.AreSortOptionsVisible">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "AreSortOptionsVisible" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SortArrow">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SortArrow" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SortByTimeAsc">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SortByTimeAsc" generated properties.</summary>
@@ -200,6 +214,12 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IngredientsText">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IngredientsText" generated properties.</summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.AreFiltersVisible">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "AreFiltersVisible" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.FiltersArrow">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "FiltersArrow" generated properties.</summary>
+        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.CzyWeganskie">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "CzyWeganskie" generated properties.</summary>
         </member>
@@ -212,11 +232,11 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.CzyNabial">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "CzyNabial" generated properties.</summary>
         </member>
-        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.AreFiltersVisible">
-            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "AreFiltersVisible" generated properties.</summary>
-        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.AreSortOptionsVisible">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "AreSortOptionsVisible" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SortArrow">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SortArrow" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SortByTimeAsc">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SortByTimeAsc" generated properties.</summary>

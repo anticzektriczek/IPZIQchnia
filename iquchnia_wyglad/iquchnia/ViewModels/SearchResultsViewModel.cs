@@ -3,6 +3,9 @@ using CommunityToolkit.Mvvm.Input;
 using iquchnia.Models;
 using iquchnia.Services;
 using System.Collections.ObjectModel;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace iquchnia.ViewModels;
 
@@ -10,24 +13,24 @@ namespace iquchnia.ViewModels;
 public partial class SearchResultsViewModel : ObservableObject
 {
     private readonly IRecipeService _recipeService;
-    private List<Recipe> _allRecipes = new();
+    private List<Recipe> _allFoundRecipes = new();
 
     public ObservableCollection<Recipe> Recipes { get; } = new();
 
     [ObservableProperty]
     private string ingredientsText;
 
+    //WŁAŚCIWOŚCI DLA FILTRÓW
+    [ObservableProperty] private bool areFiltersVisible;
+    [ObservableProperty] private string filtersArrow = "▼";
     [ObservableProperty] private bool czyWeganskie;
     [ObservableProperty] private bool czyWegetarianskie;
     [ObservableProperty] private bool czyOrzech;
     [ObservableProperty] private bool czyNabial;
 
-    [ObservableProperty] private bool areFiltersVisible;
-    public string FiltersArrow => AreFiltersVisible ? "▲" : "▼";
-
+    //WŁAŚCIWOŚCI DLA SORTOWANIA
     [ObservableProperty] private bool areSortOptionsVisible;
-    public string SortArrow => AreSortOptionsVisible ? "▲" : "▼";
-
+    [ObservableProperty] private string sortArrow = "▼";
     [ObservableProperty] private bool sortByTimeAsc;
     [ObservableProperty] private bool sortByTimeDesc;
     [ObservableProperty] private bool sortByDifficultyAsc;
@@ -38,74 +41,92 @@ public partial class SearchResultsViewModel : ObservableObject
         _recipeService = recipeService;
     }
 
-    partial void OnIngredientsTextChanged(string value)
-    {
-        LoadRecipes(value);
-    }
+    //AUTOMATYCZNE ODŚWIEŻANIE PO ZMIANIE FILTRÓW/SORTOWANIA
+    partial void OnCzyWeganskieChanged(bool value) => ApplyFiltersAndSort();
+    partial void OnCzyWegetarianskieChanged(bool value) => ApplyFiltersAndSort();
+    partial void OnCzyOrzechChanged(bool value) => ApplyFiltersAndSort();
+    partial void OnCzyNabialChanged(bool value) => ApplyFiltersAndSort();
 
-    partial void OnCzyWeganskieChanged(bool value) => ApplyFilters();
-    partial void OnCzyWegetarianskieChanged(bool value) => ApplyFilters();
-    partial void OnCzyOrzechChanged(bool value) => ApplyFilters();
-    partial void OnCzyNabialChanged(bool value) => ApplyFilters();
-
-    partial void OnSortByTimeAscChanged(bool value) { if (value) ResetSortExcept(nameof(SortByTimeAsc)); ApplyFilters(); }
-    partial void OnSortByTimeDescChanged(bool value) { if (value) ResetSortExcept(nameof(SortByTimeDesc)); ApplyFilters(); }
-    partial void OnSortByDifficultyAscChanged(bool value) { if (value) ResetSortExcept(nameof(SortByDifficultyAsc)); ApplyFilters(); }
-    partial void OnSortByDifficultyDescChanged(bool value) { if (value) ResetSortExcept(nameof(SortByDifficultyDesc)); ApplyFilters(); }
-
-    private void ResetSortExcept(string propertyName)
-    {
-        if (propertyName != nameof(SortByTimeAsc)) sortByTimeAsc = false;
-        if (propertyName != nameof(SortByTimeDesc)) sortByTimeDesc = false;
-        if (propertyName != nameof(SortByDifficultyAsc)) sortByDifficultyAsc = false;
-        if (propertyName != nameof(SortByDifficultyDesc)) sortByDifficultyDesc = false;
-    }
+    partial void OnSortByTimeAscChanged(bool value) => ApplyFiltersAndSort();
+    partial void OnSortByTimeDescChanged(bool value) => ApplyFiltersAndSort();
+    partial void OnSortByDifficultyAscChanged(bool value) => ApplyFiltersAndSort();
+    partial void OnSortByDifficultyDescChanged(bool value) => ApplyFiltersAndSort();
 
     [RelayCommand]
     private void ToggleFilters()
     {
-        if (AreSortOptionsVisible) AreSortOptionsVisible = false;
         AreFiltersVisible = !AreFiltersVisible;
+        FiltersArrow = AreFiltersVisible ? "▲" : "▼";
     }
 
     [RelayCommand]
     private void ToggleSort()
     {
-        if (AreFiltersVisible) AreFiltersVisible = false;
         AreSortOptionsVisible = !AreSortOptionsVisible;
+        SortArrow = AreSortOptionsVisible ? "▲" : "▼";
     }
 
-    private void LoadRecipes(string ingredientsText)
+    partial void OnIngredientsTextChanged(string value)
     {
-        _allRecipes.Clear();
-        Recipes.Clear();
-        if (string.IsNullOrWhiteSpace(ingredientsText)) return;
-
-        var ingredients = ingredientsText
-            .Split(',', StringSplitOptions.RemoveEmptyEntries)
-            .Select(i => i.Trim())
-            .ToList();
-
-        _allRecipes = _recipeService.SearchRecipes(ingredients).ToList();
-        ApplyFilters();
+        if (!string.IsNullOrEmpty(value))
+        {
+            _ = LoadInitialRecipesAsync(value);
+        }
     }
 
-    private void ApplyFilters()
+    private async Task LoadInitialRecipesAsync(string ingredients)
     {
-        Recipes.Clear();
-        IEnumerable<Recipe> filtered = _allRecipes;
+        var ingredientList = ingredients.Split(',').Select(i => i.Trim()).ToList();
+        var results = await _recipeService.SearchRecipesAsync(ingredientList);
+
+        _allFoundRecipes = results.ToList();
+        ApplyFiltersAndSort();
+    }
+
+    private int GetDifficultyWeight(string difficulty)
+    {
+        return difficulty?.ToLower() switch
+        {
+            "łatwy" => 1,
+            "średni" => 2,
+            "trudny" => 3,
+            _ => 4
+        };
+    }
+
+    private void ApplyFiltersAndSort()
+    {
+        var filtered = _allFoundRecipes.AsEnumerable();
 
         if (CzyWeganskie) filtered = filtered.Where(r => r.CzyWeganskie);
         if (CzyWegetarianskie) filtered = filtered.Where(r => r.CzyWegetarianskie);
         if (CzyOrzech) filtered = filtered.Where(r => r.CzyOrzech);
         if (CzyNabial) filtered = filtered.Where(r => r.CzyNabial);
 
-        // sortowanie
-        if (SortByTimeAsc) filtered = filtered.OrderBy(r => r.CzasPrzygotowaniaMin);
-        else if (SortByTimeDesc) filtered = filtered.OrderByDescending(r => r.CzasPrzygotowaniaMin);
-        else if (SortByDifficultyAsc) filtered = filtered.OrderBy(r => r.PoziomTrudnosci);
-        else if (SortByDifficultyDesc) filtered = filtered.OrderByDescending(r => r.PoziomTrudnosci);
+        if (SortByTimeAsc)
+            filtered = filtered.OrderBy(r => r.CzasPrzygotowaniaMin);
+        else if (SortByTimeDesc)
+            filtered = filtered.OrderByDescending(r => r.CzasPrzygotowaniaMin);
+        else if (SortByDifficultyAsc)
+            filtered = filtered.OrderBy(r => GetDifficultyWeight(r.PoziomTrudnosci));
+        else if (SortByDifficultyDesc)
+            filtered = filtered.OrderByDescending(r => GetDifficultyWeight(r.PoziomTrudnosci));
 
-        foreach (var r in filtered) Recipes.Add(r);
+        Recipes.Clear();
+        foreach (var recipe in filtered)
+        {
+            Recipes.Add(recipe);
+        }
+    }
+
+    [RelayCommand]
+    private async Task GoToDetails(Recipe recipe)
+    {
+        if (recipe == null) return;
+
+        await Shell.Current.GoToAsync("RecipeDetailsPage", new Dictionary<string, object>
+        {
+            { "Recipe", recipe }
+        });
     }
 }

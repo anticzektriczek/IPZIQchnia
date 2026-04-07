@@ -1,95 +1,51 @@
-﻿using iquchnia.Models;
+﻿using SQLite;
+using iquchnia.Models;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
+using System.IO;
 
 namespace iquchnia.Services;
 
 public class RecipeService : IRecipeService
 {
-    private readonly List<Recipe> _recipes = new()
-    {
-        new Recipe
-        {
-            Id = 1,
-            Name = "Omlet",
-            Ingredients = new() { "jajko", "mleko", "sól", "ser", "a" },    
-            Description = "Rozbij jajka, dodaj mleko i sól, usmaż na patelni.",
-            CzyWeganskie = true,
-            CzyWegetarianskie = false,
-            CzyOrzech = false,
-            CzyNabial = true,
-            CzasPrzygotowaniaMin = 20,
-            PoziomTrudnosci = 2
-        },
-        new Recipe
-        {
-            Id = 2,
-            Name = "Makaron z serem",
-            Ingredients = new() { "makaron", "ser", "masło", "a" },
-            Description = "Ugotuj makaron, dodaj masło i starty ser.",
-            CzyWeganskie = false,
-            CzyWegetarianskie = false,
-            CzyOrzech = false,
-            CzyNabial = false,
-            CzasPrzygotowaniaMin = 30,
-            PoziomTrudnosci = 1
-        },
-        new Recipe
-        {
-            Id = 3,
-            Name = "Parówki",
-            Ingredients = new() { "parówki", "ser", "masło", "a" },
-            Description = "Ugotuj makaron, dodaj masło i starty ser.",
-            CzyWeganskie = false,
-            CzyWegetarianskie = false,
-            CzyOrzech = false,
-            CzyNabial = false,
-            CzasPrzygotowaniaMin = 10,
-            PoziomTrudnosci = 1
-        },
-        new Recipe
-        {
-            Name = "Jajecznica",
-            Ingredients = new() { "jajko", "masło", "sól", "a" },
-            Description = "Klasyczna jajecznica.",
-            CzyWeganskie = false,
-            CzyWegetarianskie = true,
-            CzyOrzech = false,
-            CzyNabial = true,
-            CzasPrzygotowaniaMin = 10,
-            PoziomTrudnosci = 1
-        },
-        new Recipe
-        {
-            Name = "Sałatka owocowa",
-            Ingredients = new() { "jabłko", "banan", "pomarańcza", "a" },
-            Description = "Lekka sałatka.",
-            CzyWeganskie = true,
-            CzyWegetarianskie = true,
-            CzyOrzech = false,
-            CzyNabial = false,
-            CzasPrzygotowaniaMin = 40,
-            PoziomTrudnosci = 3
-        },
-        new Recipe
-        {
-            Name = "Ciasto orzechowe",
-            Ingredients = new() { "orzechy", "mąka", "cukier", "a" },
-            Description = "Ciasto z orzechami.",
-            CzyWeganskie = false,
-            CzyWegetarianskie = true,
-            CzyOrzech = true,
-            CzyNabial = true,
-            CzasPrzygotowaniaMin = 60,
-            PoziomTrudnosci = 5
-        }
-    };
+    private SQLiteAsyncConnection _database;
+    private readonly string _dbPath;
 
-    public IEnumerable<Recipe> SearchRecipes(List<string> ingredients)
+    public RecipeService(string dbPath)
     {
-        return _recipes.Where(r =>
-            ingredients.All(i =>
-                r.Ingredients.Any(ri =>
-                    ri.Contains(i, System.StringComparison.OrdinalIgnoreCase))));
+        _dbPath = dbPath;
+    }
+
+    private async Task Init()
+    {
+        if (_database is not null)
+            return;
+
+        if (!File.Exists(_dbPath))
+        {
+            using var stream = await FileSystem.OpenAppPackageFileAsync("recipes.db");
+            using var newStream = File.Create(_dbPath);
+            await stream.CopyToAsync(newStream);
+        }
+
+        _database = new SQLiteAsyncConnection(_dbPath);
+
+        await _database.CreateTableAsync<Recipe>();
+    }
+
+    public async Task<List<Recipe>> GetRecipesAsync()
+    {
+        await Init();
+        return await _database.Table<Recipe>().ToListAsync();
+    }
+
+    public async Task<IEnumerable<Recipe>> SearchRecipesAsync(List<string> ingredients)
+    {
+        await Init();
+        var allRecipes = await _database.Table<Recipe>().ToListAsync();
+
+        return allRecipes.Where(r => ingredients.All(i =>
+            r.IngredientsString.Contains(i, StringComparison.OrdinalIgnoreCase)));
     }
 }

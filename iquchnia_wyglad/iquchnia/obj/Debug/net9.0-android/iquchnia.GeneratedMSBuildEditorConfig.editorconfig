@@ -17,49 +17,49 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = iquchnia
-build_property.ProjectDir = C:\Users\48883\IPZIQchnia\iquchnia_wyglad\iquchnia\
+build_property.ProjectDir = C:\Users\48883\IPZIQchnia\iquchnia_wyglad2\iquchnia\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/48883/IPZIQchnia/iquchnia_wyglad/iquchnia/App.xaml]
+[C:/Users/48883/IPZIQchnia/iquchnia_wyglad2/iquchnia/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = iquchnia.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/Users/48883/IPZIQchnia/iquchnia_wyglad/iquchnia/AppShell.xaml]
+[C:/Users/48883/IPZIQchnia/iquchnia_wyglad2/iquchnia/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = iquchnia.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/Users/48883/IPZIQchnia/iquchnia_wyglad/iquchnia/Resources/Styles/Colors.xaml]
+[C:/Users/48883/IPZIQchnia/iquchnia_wyglad2/iquchnia/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = iquchnia.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[C:/Users/48883/IPZIQchnia/iquchnia_wyglad/iquchnia/Resources/Styles/Styles.xaml]
+[C:/Users/48883/IPZIQchnia/iquchnia_wyglad2/iquchnia/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = iquchnia.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
-[C:/Users/48883/IPZIQchnia/iquchnia_wyglad/iquchnia/Views/RecipeDetailsPage.xaml]
+[C:/Users/48883/IPZIQchnia/iquchnia_wyglad2/iquchnia/Views/RecipeDetailsPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = iquchnia.Views.RecipeDetailsPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\RecipeDetailsPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\RecipeDetailsPage.xaml
 
-[C:/Users/48883/IPZIQchnia/iquchnia_wyglad/iquchnia/Views/SearchPage.xaml]
+[C:/Users/48883/IPZIQchnia/iquchnia_wyglad2/iquchnia/Views/SearchPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = iquchnia.Views.SearchPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\SearchPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\SearchPage.xaml
 
-[C:/Users/48883/IPZIQchnia/iquchnia_wyglad/iquchnia/Views/SearchResultsPage.xaml]
+[C:/Users/48883/IPZIQchnia/iquchnia_wyglad2/iquchnia/Views/SearchResultsPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = iquchnia.Views.SearchResultsPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\SearchResultsPage.xaml

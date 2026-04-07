@@ -1,9 +1,11 @@
 ﻿using iquchnia.Models;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace iquchnia.Services;
 
 public interface IRecipeService
 {
-    IEnumerable<Recipe> SearchRecipes(List<string> ingredients);
+    Task<IEnumerable<Recipe>> SearchRecipesAsync(List<string> ingredients);
+    Task<List<Recipe>> GetRecipesAsync();
 }

@@ -1,29 +1,29 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using iquchnia.Models;
 using iquchnia.Services;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 
-namespace iquchnia.ViewModels
+namespace iquchnia.ViewModels;
+
+public partial class RecipesViewModel : ObservableObject
 {
-    public class RecipesViewModel : ObservableObject
+    private readonly IRecipeService _recipeService;
+    public ObservableCollection<Recipe> AllRecipes { get; } = new();
+
+    public RecipesViewModel(IRecipeService recipeService)
     {
-        private readonly RecipeService _recipeService;
+        _recipeService = recipeService;
+        _ = InitializeAsync();
+    }
 
-        public RecipesViewModel(RecipeService recipeService)
+    private async Task InitializeAsync()
+    {
+        var recipes = await _recipeService.GetRecipesAsync();
+
+        AllRecipes.Clear();
+        foreach (var recipe in recipes)
         {
-            _recipeService = recipeService;
-            Recipes = new ObservableCollection<Recipe>();
-        }
-
-        public ObservableCollection<Recipe> Recipes { get; }
-
-        public void SetIngredients(List<string> ingredients)
-        {
-            Recipes.Clear();
-            var results = _recipeService.SearchRecipes(ingredients);
-            foreach (var r in results)
-                Recipes.Add(r);
+            AllRecipes.Add(recipe);
         }
     }
 }
