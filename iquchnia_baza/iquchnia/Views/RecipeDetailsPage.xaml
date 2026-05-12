@@ -6,6 +6,7 @@
     x:Class="iquchnia.Views.RecipeDetailsPage"
     x:DataType="vm:RecipeDetailsViewModel"
     Title="{Binding Recipe.Name}"
+    Shell.NavBarIsVisible="False"
     BackgroundColor="#F5F5F5">
 
     <ScrollView Padding="20">
@@ -19,13 +20,19 @@
                 <HorizontalStackLayout Spacing="5">
                     <Label Text="🕒" />
                     <Label Text="{Binding Recipe.CzasPrzygotowaniaMin, StringFormat='{0} min'}"
-                           FontAttributes="Bold" />
+               FontAttributes="Bold" TextColor="Black"/>
                 </HorizontalStackLayout>
 
                 <HorizontalStackLayout Spacing="5">
                     <Label Text="📊" />
                     <Label Text="{Binding Recipe.PoziomTrudnosci}"
-                           FontAttributes="Bold" />
+               FontAttributes="Bold" TextColor="Black" />
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout Spacing="5">
+                    <Label Text="⚖️" />
+                    <Label Text="{Binding Recipe.Ilosc}" 
+               FontAttributes="Bold" TextColor="Black" />
                 </HorizontalStackLayout>
             </HorizontalStackLayout>
 
@@ -43,7 +50,7 @@
                     <DataTemplate x:DataType="x:String">
                         <HorizontalStackLayout Spacing="10">
                             <Label Text="•" FontSize="18" TextColor="#E64A19" VerticalOptions="Center"/>
-                            <Label Text="{Binding .}" FontSize="16" VerticalOptions="Center" />
+                            <Label Text="{Binding .}" FontSize="16" TextColor="Black" VerticalOptions="Center" />
                         </HorizontalStackLayout>
                     </DataTemplate>
                 </BindableLayout.ItemTemplate>

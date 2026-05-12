@@ -22,6 +22,9 @@ public class RecipeService : IRecipeService
         if (_database is not null)
             return;
 
+        // LINIA DO DODANIA: Usuwa starą bazę przy każdym uruchomieniu (tylko do testów!)
+        //if (File.Exists(_dbPath)) File.Delete(_dbPath); 
+
         if (!File.Exists(_dbPath))
         {
             using var stream = await FileSystem.OpenAppPackageFileAsync("recipes.db");
@@ -30,7 +33,6 @@ public class RecipeService : IRecipeService
         }
 
         _database = new SQLiteAsyncConnection(_dbPath);
-
         await _database.CreateTableAsync<Recipe>();
     }
 

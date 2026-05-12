@@ -17,6 +17,9 @@ public class Recipe
     [Column("Ingredients")]
     public string IngredientsString { get; set; } = string.Empty;
 
+    [Column("ilosc")]
+    public string Ilosc { get; set; } = string.Empty;
+
     [Ignore]
     public List<string> Ingredients
     {
