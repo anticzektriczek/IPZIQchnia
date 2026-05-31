@@ -22,8 +22,8 @@ public class RecipeService : IRecipeService
         if (_database is not null)
             return;
 
-        // LINIA DO DODANIA: Usuwa starą bazę przy każdym uruchomieniu (tylko do testów!)
-        if (File.Exists(_dbPath)) File.Delete(_dbPath); 
+        // LINIA DO DODANIA: Usuwa starą bazę przy każdym uruchomieniu (tylko do testów!) najlepiej jak sie z pulluje to raz to odznaczyc
+        //if (File.Exists(_dbPath)) File.Delete(_dbPath); 
 
         if (!File.Exists(_dbPath))
         {
