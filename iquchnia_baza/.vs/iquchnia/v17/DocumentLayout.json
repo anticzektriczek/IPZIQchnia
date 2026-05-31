@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\48883\\IPZIQchnia\\iquchnia_baza\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4616D9CC-975B-4B18-B2D6-51C4671EAE54}|iquchnia\\iquchnia.csproj|c:\\users\\48883\\ipziqchnia\\iquchnia_baza\\iquchnia\\services\\recipeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4616D9CC-975B-4B18-B2D6-51C4671EAE54}|iquchnia\\iquchnia.csproj|solutionrelative:iquchnia\\services\\recipeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4616D9CC-975B-4B18-B2D6-51C4671EAE54}|iquchnia\\iquchnia.csproj|c:\\users\\48883\\ipziqchnia\\iquchnia_baza\\iquchnia\\services\\irecipeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4616D9CC-975B-4B18-B2D6-51C4671EAE54}|iquchnia\\iquchnia.csproj|solutionrelative:iquchnia\\services\\irecipeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4616D9CC-975B-4B18-B2D6-51C4671EAE54}|iquchnia\\iquchnia.csproj|c:\\users\\48883\\ipziqchnia\\iquchnia_baza\\iquchnia\\views\\searchpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4616D9CC-975B-4B18-B2D6-51C4671EAE54}|iquchnia\\iquchnia.csproj|solutionrelative:iquchnia\\views\\searchpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4616D9CC-975B-4B18-B2D6-51C4671EAE54}|iquchnia\\iquchnia.csproj|c:\\users\\48883\\ipziqchnia\\iquchnia_baza\\iquchnia\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{4616D9CC-975B-4B18-B2D6-51C4671EAE54}|iquchnia\\iquchnia.csproj|solutionrelative:iquchnia\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4616D9CC-975B-4B18-B2D6-51C4671EAE54}|iquchnia\\iquchnia.csproj|c:\\users\\48883\\ipziqchnia\\iquchnia_baza\\iquchnia\\models\\recipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4616D9CC-975B-4B18-B2D6-51C4671EAE54}|iquchnia\\iquchnia.csproj|solutionrelative:iquchnia\\models\\recipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4616D9CC-975B-4B18-B2D6-51C4671EAE54}|iquchnia\\iquchnia.csproj|c:\\users\\48883\\ipziqchnia\\iquchnia_baza\\iquchnia\\views\\searchresultspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -25,6 +17,18 @@
     {
       "AbsoluteMoniker": "D:0:0:{4616D9CC-975B-4B18-B2D6-51C4671EAE54}|iquchnia\\iquchnia.csproj|c:\\users\\48883\\ipziqchnia\\iquchnia_baza\\iquchnia\\views\\recipedetailspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{4616D9CC-975B-4B18-B2D6-51C4671EAE54}|iquchnia\\iquchnia.csproj|solutionrelative:iquchnia\\views\\recipedetailspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4616D9CC-975B-4B18-B2D6-51C4671EAE54}|iquchnia\\iquchnia.csproj|c:\\users\\48883\\ipziqchnia\\iquchnia_baza\\iquchnia\\services\\recipeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4616D9CC-975B-4B18-B2D6-51C4671EAE54}|iquchnia\\iquchnia.csproj|solutionrelative:iquchnia\\services\\recipeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4616D9CC-975B-4B18-B2D6-51C4671EAE54}|iquchnia\\iquchnia.csproj|c:\\users\\48883\\ipziqchnia\\iquchnia_baza\\iquchnia\\services\\irecipeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4616D9CC-975B-4B18-B2D6-51C4671EAE54}|iquchnia\\iquchnia.csproj|solutionrelative:iquchnia\\services\\irecipeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4616D9CC-975B-4B18-B2D6-51C4671EAE54}|iquchnia\\iquchnia.csproj|c:\\users\\48883\\ipziqchnia\\iquchnia_baza\\iquchnia\\models\\recipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4616D9CC-975B-4B18-B2D6-51C4671EAE54}|iquchnia\\iquchnia.csproj|solutionrelative:iquchnia\\models\\recipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,19 +43,31 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "SearchPage.xaml",
+              "DocumentMoniker": "C:\\Users\\48883\\IPZIQchnia\\iquchnia_baza\\iquchnia\\Views\\SearchPage.xaml",
+              "RelativeDocumentMoniker": "iquchnia\\Views\\SearchPage.xaml",
+              "ToolTip": "C:\\Users\\48883\\IPZIQchnia\\iquchnia_baza\\iquchnia\\Views\\SearchPage.xaml",
+              "RelativeToolTip": "iquchnia\\Views\\SearchPage.xaml",
+              "ViewState": "AgIAAEkAAAAAAAAAAAApwFYAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-31T18:58:03.124Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "RecipeService.cs",
               "DocumentMoniker": "C:\\Users\\48883\\IPZIQchnia\\iquchnia_baza\\iquchnia\\Services\\RecipeService.cs",
               "RelativeDocumentMoniker": "iquchnia\\Services\\RecipeService.cs",
               "ToolTip": "C:\\Users\\48883\\IPZIQchnia\\iquchnia_baza\\iquchnia\\Services\\RecipeService.cs",
               "RelativeToolTip": "iquchnia\\Services\\RecipeService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-12T18:13:28.775Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-12T18:13:28.775Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "IRecipeService.cs",
               "DocumentMoniker": "C:\\Users\\48883\\IPZIQchnia\\iquchnia_baza\\iquchnia\\Services\\IRecipeService.cs",
               "RelativeDocumentMoniker": "iquchnia\\Services\\IRecipeService.cs",
@@ -63,7 +79,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Recipe.cs",
               "DocumentMoniker": "C:\\Users\\48883\\IPZIQchnia\\iquchnia_baza\\iquchnia\\Models\\Recipe.cs",
               "RelativeDocumentMoniker": "iquchnia\\Models\\Recipe.cs",
@@ -75,39 +91,42 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\48883\\IPZIQchnia\\iquchnia_baza\\iquchnia\\App.xaml",
               "RelativeDocumentMoniker": "iquchnia\\App.xaml",
               "ToolTip": "C:\\Users\\48883\\IPZIQchnia\\iquchnia_baza\\iquchnia\\App.xaml",
               "RelativeToolTip": "iquchnia\\App.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-04-07T17:21:44.989Z"
+              "WhenOpened": "2026-04-07T17:21:44.989Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "SearchResultsPage.xaml",
               "DocumentMoniker": "C:\\Users\\48883\\IPZIQchnia\\iquchnia_baza\\iquchnia\\Views\\SearchResultsPage.xaml",
               "RelativeDocumentMoniker": "iquchnia\\Views\\SearchResultsPage.xaml",
               "ToolTip": "C:\\Users\\48883\\IPZIQchnia\\iquchnia_baza\\iquchnia\\Views\\SearchResultsPage.xaml",
               "RelativeToolTip": "iquchnia\\Views\\SearchResultsPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAH8AAAAAAAAAAAAQwI8AAABQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-04-07T17:20:34.317Z"
+              "WhenOpened": "2026-04-07T17:20:34.317Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "RecipeDetailsPage.xaml",
               "DocumentMoniker": "C:\\Users\\48883\\IPZIQchnia\\iquchnia_baza\\iquchnia\\Views\\RecipeDetailsPage.xaml",
               "RelativeDocumentMoniker": "iquchnia\\Views\\RecipeDetailsPage.xaml",
               "ToolTip": "C:\\Users\\48883\\IPZIQchnia\\iquchnia_baza\\iquchnia\\Views\\RecipeDetailsPage.xaml",
               "RelativeToolTip": "iquchnia\\Views\\RecipeDetailsPage.xaml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABwAAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-04-07T16:44:34.837Z"
+              "WhenOpened": "2026-04-07T16:44:34.837Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -83,13 +83,22 @@
                             <Grid ColumnDefinitions="*, Auto" ColumnSpacing="5">
 
                                 <Label Text="{Binding}"
-                                       FontSize="14"
-                                       TextColor="White"
-                                       VerticalOptions="Center"
-                                       LineBreakMode="TailTruncation" />
+                                   FontSize="16"
+                                   TextColor="White"
+                                   VerticalOptions="Center"
+                                   LineBreakMode="TailTruncation">
+
+                                    <Label.Shadow>
+                                        <Shadow Brush="#000000"
+                                        Offset="2,2"
+                                        Radius="1"
+                                        Opacity="0.3" />
+                                    </Label.Shadow>
+
+                                </Label>
                                 <Label Grid.Column="1"
                                        Text="✖"
-                                       FontSize="16"
+                                       FontSize="10"
                                        TextColor="#FFFFFF"
                                        VerticalOptions="Center"
                                        HorizontalOptions="End"
@@ -109,12 +118,12 @@
 
         <Button Grid.Row="1"
                 Text="Szukaj"
-                FontSize="18"
-                HeightRequest="60"
+                FontSize="25"
+                HeightRequest="67"
                 BackgroundColor="#D3C4B7"
                 TextColor="White"
                 CornerRadius="30"
-                Margin="20,10,20,20" 
+                Margin="20,20,20,20" 
                 Command="{Binding SearchCommand}" />
 
     </Grid>
