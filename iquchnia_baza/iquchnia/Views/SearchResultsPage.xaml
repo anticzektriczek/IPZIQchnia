@@ -162,7 +162,7 @@
                         <Frame Padding="15"
                                Margin="10,5"
                                BackgroundColor="#D3C4B7"
-                               CornerRadius="20"
+                               CornerRadius="15"
                                HasShadow="False"
                                BorderColor="Transparent">
 
@@ -175,7 +175,7 @@
                                 <Label.Shadow>
                                     <Shadow Brush="#000000"
                                         Offset="1,2"
-                                        Radius="5"
+                                        Radius="3"
                                         Opacity="0.4" />
                                     </Label.Shadow>
 

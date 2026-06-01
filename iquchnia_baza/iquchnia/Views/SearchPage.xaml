@@ -24,12 +24,11 @@
               Padding="20" 
               RowSpacing="20">
 
-            <Label Grid.Row="0"
-                   Text="iQchnia"
-                   FontSize="36"
-                   FontAttributes="Bold"
-                   TextColor="#FFFFFF" 
+            <Image Grid.Row="0"
+                   Source="iqchnialogo.jpg"
+                   HeightRequest="60"
                    HorizontalOptions="Center"
+                   Aspect="AspectFit"
                    Margin="0,10,0,10" />
 
             <Grid Grid.Row="1" ColumnDefinitions="*, Auto" ColumnSpacing="10">
@@ -39,7 +38,7 @@
                         HeightRequest="50"
                         HorizontalOptions="FillAndExpand">
 
-                    <Entry Placeholder="Wpisz składniki"
+                    <Entry Placeholder="Wpisz składniki..."
                            Text="{Binding CurrentIngredient}"
                            FontSize="18"
                            TextColor="#4A4A4A"
@@ -73,26 +72,26 @@
 
                 <CollectionView.ItemTemplate>
                     <DataTemplate x:DataType="x:String">
-                        <Frame BackgroundColor="#D3C4B7"
-                               Padding="10,8"
-                               Margin="2"
-                               HasShadow="False"
-                               BorderColor="Transparent"
-                               CornerRadius="12">
+                        <Border BackgroundColor="#D3C4B7"
+                                Padding="10,8"
+                                Margin="2"
+                                Stroke="White"
+                                StrokeThickness="3"
+                                StrokeShape="RoundRectangle 9">
 
                             <Grid ColumnDefinitions="*, Auto" ColumnSpacing="5">
 
                                 <Label Text="{Binding}"
-                                   FontSize="16"
-                                   TextColor="White"
-                                   VerticalOptions="Center"
-                                   LineBreakMode="TailTruncation">
+                                       FontSize="16"
+                                       TextColor="White"
+                                       VerticalOptions="Center"
+                                       LineBreakMode="TailTruncation">
 
                                     <Label.Shadow>
                                         <Shadow Brush="#000000"
-                                        Offset="2,2"
-                                        Radius="1"
-                                        Opacity="0.3" />
+                                                Offset="2,2"
+                                                Radius="1"
+                                                Opacity="0.3" />
                                     </Label.Shadow>
 
                                 </Label>
@@ -110,7 +109,7 @@
                                     </Label.GestureRecognizers>
                                 </Label>
                             </Grid>
-                        </Frame>
+                        </Border>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
