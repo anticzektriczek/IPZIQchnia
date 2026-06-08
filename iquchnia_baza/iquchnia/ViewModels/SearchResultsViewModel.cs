@@ -20,7 +20,7 @@ public partial class SearchResultsViewModel : ObservableObject
     [ObservableProperty]
     private string ingredientsText;
 
-    //WŁAŚCIWOŚCI DLA FILTRÓW
+    // WŁAŚCIWOŚCI DLA FILTRÓW
     [ObservableProperty] private bool areFiltersVisible;
     [ObservableProperty] private string filtersArrow = "▼";
     [ObservableProperty] private bool czyWeganskie;
@@ -28,7 +28,7 @@ public partial class SearchResultsViewModel : ObservableObject
     [ObservableProperty] private bool czyOrzech;
     [ObservableProperty] private bool czyNabial;
 
-    //WŁAŚCIWOŚCI DLA SORTOWANIA
+    // WŁAŚCIWOŚCI DLA SORTOWANIA
     [ObservableProperty] private bool areSortOptionsVisible;
     [ObservableProperty] private string sortArrow = "▼";
     [ObservableProperty] private bool sortByTimeAsc;
@@ -41,7 +41,7 @@ public partial class SearchResultsViewModel : ObservableObject
         _recipeService = recipeService;
     }
 
-    //AUTOMATYCZNE ODŚWIEŻANIE PO ZMIANIE FILTRÓW/SORTOWANIA
+    // AUTOMATYCZNE ODŚWIEŻANIE PO ZMIANIE FILTRÓW/SORTOWANIA
     partial void OnCzyWeganskieChanged(bool value) => ApplyFiltersAndSort();
     partial void OnCzyWegetarianskieChanged(bool value) => ApplyFiltersAndSort();
     partial void OnCzyOrzechChanged(bool value) => ApplyFiltersAndSort();
@@ -69,9 +69,7 @@ public partial class SearchResultsViewModel : ObservableObject
     partial void OnIngredientsTextChanged(string value)
     {
         if (!string.IsNullOrEmpty(value))
-        {
             _ = LoadInitialRecipesAsync(value);
-        }
     }
 
     private async Task LoadInitialRecipesAsync(string ingredients)
@@ -114,19 +112,25 @@ public partial class SearchResultsViewModel : ObservableObject
 
         Recipes.Clear();
         foreach (var recipe in filtered)
-        {
             Recipes.Add(recipe);
-        }
     }
 
+    // Używane przez TapGestureRecognizer w XAML (OpenRecipeCommand)
     [RelayCommand]
-    private async Task GoToDetails(Recipe recipe)
+    private async Task OpenRecipe(Recipe recipe)
     {
-        if (recipe == null) return;
+        if (recipe is null) return;
 
         await Shell.Current.GoToAsync("RecipeDetailsPage", new Dictionary<string, object>
         {
             { "Recipe", recipe }
         });
+    }
+
+    // Zostawiam dla kompatybilności wstecznej
+    [RelayCommand]
+    private async Task GoToDetails(Recipe recipe)
+    {
+        await OpenRecipe(recipe);
     }
 }

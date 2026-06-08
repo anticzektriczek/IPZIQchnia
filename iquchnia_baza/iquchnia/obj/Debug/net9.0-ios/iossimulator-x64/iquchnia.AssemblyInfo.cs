@@ -14,11 +14,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("iquchnia")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+a8473b1d3f7f2c29db65786140443424df2ead6a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+2f14e27b7522fd205db8e6b4eb569ee9955c0b3a")]
 [assembly: System.Reflection.AssemblyProductAttribute("iquchnia")]
 [assembly: System.Reflection.AssemblyTitleAttribute("iquchnia")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
-[assembly: System.Runtime.Versioning.TargetPlatformAttribute("iOS18.4")]
+[assembly: System.Runtime.Versioning.TargetPlatformAttribute("iOS26.0")]
 [assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("iOS15.0")]
 
 // Wygenerowane przez klasę WriteCodeFragment programu MSBuild.

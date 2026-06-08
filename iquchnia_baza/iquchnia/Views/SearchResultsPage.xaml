@@ -21,26 +21,24 @@
             </BoxView.Background>
         </BoxView>
 
-        <Grid Grid.Row="0" 
-              RowDefinitions="Auto, Auto, *" 
-              Padding="5" 
+        <Grid Grid.Row="0"
+              RowDefinitions="Auto, Auto, *"
+              Padding="5"
               RowSpacing="20">
 
             <Label Grid.Row="0"
-       Text="Wyniki wyszukiwania"
-       FontSize="28"
-       FontAttributes="Bold"
-       TextColor="#FFFFFF" 
-       HorizontalOptions="Center"
-       Margin="0,10,0,10">
-
+                   Text="Wyniki wyszukiwania"
+                   FontSize="28"
+                   FontAttributes="Bold"
+                   TextColor="#FFFFFF"
+                   HorizontalOptions="Center"
+                   Margin="0,10,0,10">
                 <Label.Shadow>
                     <Shadow Brush="#000000"
-                Offset="2,2"
-                Radius="3"
-                Opacity="0.5" />
+                            Offset="2,2"
+                            Radius="3"
+                            Opacity="0.5" />
                 </Label.Shadow>
-
             </Label>
 
             <Grid Grid.Row="1" ColumnDefinitions="*, *" ColumnSpacing="12" Padding="15,0">
@@ -60,12 +58,10 @@
                                    FontSize="16"
                                    FontAttributes="Bold"
                                    TextColor="#4A4A4A" />
-
                             <Label Text="{Binding FiltersArrow}"
                                    FontSize="16"
                                    TextColor="#4A4A4A"
                                    HorizontalOptions="End" />
-
                             <Grid.GestureRecognizers>
                                 <TapGestureRecognizer Command="{Binding ToggleFiltersCommand}" />
                             </Grid.GestureRecognizers>
@@ -73,35 +69,39 @@
 
                         <VerticalStackLayout IsVisible="{Binding AreFiltersVisible}" Spacing="0">
                             <HorizontalStackLayout Spacing="2">
-                                <CheckBox IsChecked="{Binding CzyWeganskie}" 
-                                    Color="#D3C4B7" 
-                                    Margin="0,0,-10,0" />
-
-                                <Label Text="Wegańskie" 
-                                    VerticalOptions="Center" 
-                                    TextColor="#4A4A4A" />                       
-
+                                <CheckBox IsChecked="{Binding CzyWeganskie}"
+                                          Color="#D3C4B7"
+                                          Margin="0,0,-10,0" />
+                                <Label Text="Wegańskie"
+                                       VerticalOptions="Center"
+                                       TextColor="#4A4A4A" />
                             </HorizontalStackLayout>
 
                             <HorizontalStackLayout Spacing="2">
-                                <CheckBox IsChecked="{Binding CzyWegetarianskie}" 
-                                    Color="#D3C4B7" 
-                                    Margin="0,0,-10,0" />
-                                <Label Text="Wegetariańskie" VerticalOptions="Center" TextColor="#4A4A4A" />
+                                <CheckBox IsChecked="{Binding CzyWegetarianskie}"
+                                          Color="#D3C4B7"
+                                          Margin="0,0,-10,0" />
+                                <Label Text="Wegetariańskie"
+                                       VerticalOptions="Center"
+                                       TextColor="#4A4A4A" />
                             </HorizontalStackLayout>
 
                             <HorizontalStackLayout Spacing="2">
-                                <CheckBox IsChecked="{Binding CzyOrzech}" 
-                                    Color="#D3C4B7" 
-                                    Margin="0,0,-10,0" />
-                                <Label Text="Z orzechami" VerticalOptions="Center" TextColor="#4A4A4A" />
+                                <CheckBox IsChecked="{Binding CzyOrzech}"
+                                          Color="#D3C4B7"
+                                          Margin="0,0,-10,0" />
+                                <Label Text="Z orzechami"
+                                       VerticalOptions="Center"
+                                       TextColor="#4A4A4A" />
                             </HorizontalStackLayout>
 
                             <HorizontalStackLayout Spacing="2">
-                                <CheckBox IsChecked="{Binding CzyNabial}" 
-                                      Color="#D3C4B7" 
-                                      Margin="0,0,-10,0" />             
-                                <Label Text="Z nabiałem" VerticalOptions="Center" TextColor="#4A4A4A" />
+                                <CheckBox IsChecked="{Binding CzyNabial}"
+                                          Color="#D3C4B7"
+                                          Margin="0,0,-10,0" />
+                                <Label Text="Z nabiałem"
+                                       VerticalOptions="Center"
+                                       TextColor="#4A4A4A" />
                             </HorizontalStackLayout>
                         </VerticalStackLayout>
                     </VerticalStackLayout>
@@ -128,19 +128,17 @@
                                    FontSize="16"
                                    FontAttributes="Bold"
                                    TextColor="#4A4A4A" />
-
                             <Label Text="{Binding SortArrow}"
                                    FontSize="16"
                                    TextColor="#4A4A4A"
                                    HorizontalOptions="End" />
-
                             <Grid.GestureRecognizers>
                                 <TapGestureRecognizer Command="{Binding ToggleSortCommand}" />
                             </Grid.GestureRecognizers>
                         </Grid>
 
                         <VerticalStackLayout IsVisible="{Binding AreSortOptionsVisible}" Spacing="0">
-                            <RadioButton Content="Czas (rosnąco)" FontSize="13"  TextColor="#4A4A4A" IsChecked="{Binding SortByTimeAsc}" />
+                            <RadioButton Content="Czas (rosnąco)" FontSize="13" TextColor="#4A4A4A" IsChecked="{Binding SortByTimeAsc}" />
                             <RadioButton Content="Czas (malejąco)" FontSize="13" TextColor="#4A4A4A" IsChecked="{Binding SortByTimeDesc}" />
                             <RadioButton Content="Trudność (łatwe)" FontSize="13" TextColor="#4A4A4A" IsChecked="{Binding SortByDifficultyAsc}" />
                             <RadioButton Content="Trudność (trudne)" FontSize="13" TextColor="#4A4A4A" IsChecked="{Binding SortByDifficultyDesc}" />
@@ -151,11 +149,9 @@
             </Grid>
 
             <CollectionView Grid.Row="2"
-                            x:Name="RecipesCollection"
                             ItemsSource="{Binding Recipes}"
-                            SelectionMode="Single"
-                            SelectionChanged="OnRecipeSelected"
-                            VerticalScrollBarVisibility="Never">
+                            VerticalScrollBarVisibility="Never"
+                            SelectionMode="None">
                 <CollectionView.ItemTemplate>
                     <DataTemplate x:DataType="models:Recipe">
 
@@ -166,20 +162,25 @@
                                HasShadow="False"
                                BorderColor="Transparent">
 
-                            <Label Text="{Binding Name}"
-                               FontSize="18"
-                               HorizontalTextAlignment="Center"
-                               FontAttributes="Bold"
-                               TextColor="White">
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer
+                                    Command="{Binding Source={RelativeSource AncestorType={x:Type vm:SearchResultsViewModel}}, Path=OpenRecipeCommand}"
+                                    CommandParameter="{Binding .}" />
+                            </Frame.GestureRecognizers>
 
+                            <Label Text="{Binding Name}"
+                                   FontSize="18"
+                                   HorizontalTextAlignment="Center"
+                                   FontAttributes="Bold"
+                                   TextColor="White">
                                 <Label.Shadow>
                                     <Shadow Brush="#000000"
-                                        Offset="1,2"
-                                        Radius="3"
-                                        Opacity="0.4" />
-                                    </Label.Shadow>
-
+                                            Offset="1,2"
+                                            Radius="3"
+                                            Opacity="0.4" />
+                                </Label.Shadow>
                             </Label>
+
                         </Frame>
 
                     </DataTemplate>

@@ -50,4 +50,18 @@ public class RecipeService : IRecipeService
         return allRecipes.Where(r => ingredients.All(i =>
             r.IngredientsString.Contains(i, StringComparison.OrdinalIgnoreCase)));
     }
+
+    public async Task<List<string>> GetAllIngredientsAsync()
+    {
+        await Init();
+        var recipes = await _database.Table<Recipe>().ToListAsync();
+
+        return recipes
+            .SelectMany(r => r.Ingredients)
+            .Select(i => i.Trim())
+            .Where(i => !string.IsNullOrWhiteSpace(i))
+            .Distinct(StringComparer.OrdinalIgnoreCase)
+            .OrderBy(i => i)
+            .ToList();
+    }
 }
