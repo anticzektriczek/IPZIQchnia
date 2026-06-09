@@ -22,7 +22,7 @@ public class RecipeService : IRecipeService
         if (_database is not null)
             return;
 
-        // LINIA DO DODANIA: Usuwa starą bazę przy każdym uruchomieniu (tylko do testów!)
+        // LINIA DO DODANIA: Usuwa starą bazę przy każdym uruchomieniu (tylko do testów!) najlepiej jak sie z pulluje to raz to odznaczyc
         //if (File.Exists(_dbPath)) File.Delete(_dbPath); 
 
         if (!File.Exists(_dbPath))
@@ -49,5 +49,19 @@ public class RecipeService : IRecipeService
 
         return allRecipes.Where(r => ingredients.All(i =>
             r.IngredientsString.Contains(i, StringComparison.OrdinalIgnoreCase)));
+    }
+
+    public async Task<List<string>> GetAllIngredientsAsync()
+    {
+        await Init();
+        var recipes = await _database.Table<Recipe>().ToListAsync();
+
+        return recipes
+            .SelectMany(r => r.Ingredients)
+            .Select(i => i.Trim())
+            .Where(i => !string.IsNullOrWhiteSpace(i))
+            .Distinct(StringComparer.OrdinalIgnoreCase)
+            .OrderBy(i => i)
+            .ToList();
     }
 }

@@ -8,4 +8,5 @@ public interface IRecipeService
 {
     Task<IEnumerable<Recipe>> SearchRecipesAsync(List<string> ingredients);
     Task<List<Recipe>> GetRecipesAsync();
+    Task<List<string>> GetAllIngredientsAsync();
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "T6zLJIaevGg=",
+  "dgSpecHash": "UgrgsGY17h4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\piotr\\Desktop\\IPZ\\IPZIQchnia-gp55571\\iquchnia_baza\\iquchnia\\iquchnia.csproj",
+  "projectFilePath": "C:\\Users\\piotr\\Desktop\\IPZ\\repo\\IPZIQchnia\\iquchnia_baza\\iquchnia\\iquchnia.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\piotr\\.nuget\\packages\\communitytoolkit.mvvm\\8.4.0\\communitytoolkit.mvvm.8.4.0.nupkg.sha512",
     "C:\\Users\\piotr\\.nuget\\packages\\googlegson\\2.11.0.3\\googlegson.2.11.0.3.nupkg.sha512",

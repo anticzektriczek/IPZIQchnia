@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\piotr\\Desktop\\IPZ\\IPZIQchnia-gp55571\\iquchnia_baza\\iquchnia\\iquchnia.csproj": {}
+    "C:\\Users\\piotr\\Desktop\\IPZ\\repo\\IPZIQchnia\\iquchnia_baza\\iquchnia\\iquchnia.csproj": {}
   },
   "projects": {
-    "C:\\Users\\piotr\\Desktop\\IPZ\\IPZIQchnia-gp55571\\iquchnia_baza\\iquchnia\\iquchnia.csproj": {
+    "C:\\Users\\piotr\\Desktop\\IPZ\\repo\\IPZIQchnia\\iquchnia_baza\\iquchnia\\iquchnia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\piotr\\Desktop\\IPZ\\IPZIQchnia-gp55571\\iquchnia_baza\\iquchnia\\iquchnia.csproj",
+        "projectUniqueName": "C:\\Users\\piotr\\Desktop\\IPZ\\repo\\IPZIQchnia\\iquchnia_baza\\iquchnia\\iquchnia.csproj",
         "projectName": "iquchnia",
-        "projectPath": "C:\\Users\\piotr\\Desktop\\IPZ\\IPZIQchnia-gp55571\\iquchnia_baza\\iquchnia\\iquchnia.csproj",
+        "projectPath": "C:\\Users\\piotr\\Desktop\\IPZ\\repo\\IPZIQchnia\\iquchnia_baza\\iquchnia\\iquchnia.csproj",
         "packagesPath": "C:\\Users\\piotr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\piotr\\Desktop\\IPZ\\IPZIQchnia-gp55571\\iquchnia_baza\\iquchnia\\obj\\",
+        "outputPath": "C:\\Users\\piotr\\Desktop\\IPZ\\repo\\IPZIQchnia\\iquchnia_baza\\iquchnia\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [

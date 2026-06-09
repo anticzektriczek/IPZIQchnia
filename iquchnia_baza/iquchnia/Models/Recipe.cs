@@ -20,6 +20,9 @@ public class Recipe
     [Column("ilosc")]
     public string Ilosc { get; set; } = string.Empty;
 
+    [Column("ImageSource")]
+    public string ImageSource { get; set; } = string.Empty;
+
     [Ignore]
     public List<string> Ingredients
     {
